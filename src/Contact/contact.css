@@ -5,6 +5,9 @@
 .logo-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 .logo{
     cursor: pointer;
@@ -13,17 +16,59 @@
     padding-left: 5%;
     padding-right: 5%;
 }
-#logo-contact{
+.logo-contact{
     display: flex;
     flex-direction: row;
     position: relative;
     width: 20%;
 }
 #logo-poly{
-    width: 10%;
+    width: 50%;
 }
-#title{
+.contact-title-container{
+    position: relative;
+  }
+#title-contact{
     display: flex;
     justify-content: center;
     padding-top: 2%;
+    font-size: 32px;
+    color: white;
+    position: relative;
+}
+.line-contact {
+    top:55%;
+    position: absolute;
+    left: 46.5%;
+  height: 30px;
+  width: 10px;
+  background-color: white;
+  margin-right: 10px; /* Adjust the spacing between the line and the title */
+  vertical-align: middle;
+  content: "";
+  display: inline-block;
+  }
+.contact-copyrights{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contact-copyrights-logo{
+    margin-left: 1%;
+    display: flex;
+    color: white;
+    height: 18px;
+}
+.contact-copyrights-text{
+    font-size: 12px;
+    color: white;
+    letter-spacing: 2px;
+}
+.contact-copyrights-polygames{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    font-size: 18px;
 }

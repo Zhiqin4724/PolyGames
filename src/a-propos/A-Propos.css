@@ -1,13 +1,13 @@
 .container-a-propos{
     width: 100%;
     height: 1050px;
-    background-color: bisque;
+    background: linear-gradient(0deg, bisque 50%, transparent);
     position: relative;
 }
 #left-title{
     position: absolute;
-    top:20%;
-    left: 10%;
+    top:25%;
+    left: 15%;
     text-align: left;
 }
 #sub-title{
@@ -15,7 +15,7 @@
     margin-top: 2%;
     margin-left: 2%;
 }
-#title{
+#title-a-propros{
     color: #FFF;
     font-family: Seymour One;
     font-size: 64px;

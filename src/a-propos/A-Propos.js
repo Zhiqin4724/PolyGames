@@ -6,7 +6,7 @@ function Apropos() {
 
       <div className="container-a-propos">
         <div id="left-title">
-        <div id="title">
+        <div id="title-a-propros">
             Welcome to PolyGames
         </div>
         <div id="sub-title">
