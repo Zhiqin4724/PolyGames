@@ -5,6 +5,7 @@ import Contact from './Contact/contact.js';
 import Equipe from './Equipe/equipe.js';
 import About from './About/about.js';
 import Commandite from './Commandite/commandite.js';
+import { motion } from 'framer-motion';
 
 function App() {
   return (
