@@ -16,6 +16,7 @@
     flex-direction: row;
     justify-content: space-around;
     cursor: pointer;
+    padding-left: 20%;
 }
 .icon{
     height: 12%;
@@ -68,4 +69,45 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.hamburger-button{
+        z-index: 5;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top:15px;
+        left: 230px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+}
+.hamburger-button:hover{
+    transition: 0.3 ease-in;
+    scale: 1.2;
+}
+.navbar-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 500px;
+    background: white;
+    /* height: 100%; */
+    bottom: 0;
+    /* z-index: 2;  */
+}
+.navbar-links{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.navbar-polygames-logo{
+    position: fixed;
+    width: 80px;
+    top:15px;
+    left: 300px;
 }

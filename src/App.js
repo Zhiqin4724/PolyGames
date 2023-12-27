@@ -11,14 +11,18 @@ function App() {
   return (
     <>
     <div className="container">
-    <NavBar></NavBar>
-    <Apropos></Apropos>
+    <section id='Homepage'></section>
+    <NavBar ></NavBar>
+    <section id="APropros"></section>
+    <Apropos ></Apropos>
     <About></About>
-    <Equipe></Equipe>
-    <Commandite></Commandite>
-    <Contact></Contact>
+    <section id="Equipe"></section>
+    <Equipe ></Equipe>
+    <section id="Commandite"></section>
+    <Commandite ></Commandite>
+    <section id="Contact"></section>
+    <Contact ></Contact>
     </div></>
   );
 }
-
 export default App;
