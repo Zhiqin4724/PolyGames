@@ -13,15 +13,11 @@ function App() {
     <div className="container">
     <section id='Homepage'></section>
     <NavBar ></NavBar>
-    <section id="APropros"></section>
-    <Apropos ></Apropos>
+    <section id="APropros"><Apropos ></Apropos></section>
     <About></About>
-    <section id="Equipe"></section>
-    <Equipe ></Equipe>
-    <section id="Commandite"></section>
-    <Commandite ></Commandite>
-    <section id="Contact"></section>
-    <Contact ></Contact>
+    <section id="Equipe"><Equipe ></Equipe></section>
+    <section id="Commandite"><Commandite ></Commandite></section>
+    <section id="Contact"><Contact ></Contact></section>
     </div></>
   );
 }
