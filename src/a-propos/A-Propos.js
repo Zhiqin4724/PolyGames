@@ -17,11 +17,26 @@ const textvariants = {
 }
 const textslide = {
   initial: {
-    x: "250%",
+    x: "200%",
   },
   animate:{
-    x: "-300%",
+    x: "-450%",
     transition:{
+      duration: 10,
+      repeat: Infinity,
+      repeatType: "loop", 
+      ease: "linear",
+    }
+  }
+}
+const textslide2 = {
+  initial: {
+    x: "200%",
+  },
+  animate:{
+    x: "-450%",
+    transition:{
+      delay: 5,
       duration: 10,
       repeat: Infinity,
       repeatType: "loop", 
@@ -48,6 +63,9 @@ function Apropos() {
         </motion.div>
         </motion.div>
         <motion.div className='apropros-bg-text' variants={textslide} initial="initial" animate="animate">
+          Game Club Creation
+        </motion.div>
+        <motion.div className='apropros-bg-text' variants={textslide2} initial="initial" animate="animate">
           Game Club Creation
         </motion.div>
       </div>
