@@ -4,7 +4,7 @@ function Commandite() {
     return (
 
       <div className="container-commandite">
-        <div id="title">contact</div>
+        <div id="title">Commanditaire</div>
         <div className="logo-container">
             <div id="logo-polygames">
 

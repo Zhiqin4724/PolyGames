@@ -23,9 +23,12 @@
     transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
     overflow: hidden;
+    margin-top: 10%;
 }
 .equipe-cards-1:hover{
     background-color: rgb(255, 255, 255);
+    scale: 1.2;
+    transition: scale 0.3s ease-in-out;
 
 }
 .equipe-cards-2{
@@ -42,6 +45,8 @@
 }
 .equipe-cards-2:hover{
     background-color: rgb(255, 255, 255);
+    scale: 1.2;
+    transition: scale 0.3s ease-in-out;
 
 }
 .equipe-cards-3{
@@ -55,9 +60,12 @@
     transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
     overflow: hidden;
+    margin-top: 10%;
 }
 .equipe-cards-3:hover{
     background-color: rgb(255, 255, 255);
+    scale: 1.2;
+    transition: scale 0.3s ease-in-out;
 
 }
 .equipe-cards-4{
@@ -74,6 +82,8 @@
 }
 .equipe-cards-4:hover{
     background-color: white;
+    scale: 1.2;
+    transition: scale 0.3s ease-in-out;
 }
 .equipe-cards-5{
     position:relative;
@@ -84,11 +94,13 @@
     background-color: #012F47 ;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
     overflow: hidden;
+    margin-top: 10%;
 }
 .equipe-cards-5:hover{
     background-color: rgb(255, 255, 255);
+    scale: 1.2;
+    transition: scale 0.3s ease-in-out;
 
 }
 .equipe-title-container{
@@ -111,8 +123,9 @@
 }
 
 .equipe-cards-4:hover .equipe-cube-logo {
-    opacity: 0.5 ; 
-    transition: opacity 0.3s ease-in-out;
+    opacity: 0.9 ; 
+    scale: 1.2;
+    transition: opacity 0.3s ease-in-out, scale 0.3s ease-in-out ;
 }
 .equipe-gamejam-logo{
     width: 200px;
@@ -124,8 +137,9 @@
 }
 
 .equipe-cards-1:hover .equipe-gamejam-logo {
-    opacity: 0.5 ; 
-    transition: opacity 0.3s ease-in-out;
+    opacity: 0.6 ; 
+    scale: 1.2;
+    transition: opacity 0.3s ease-in-out, scale 0.3s ease-in-out ;
 }
 .equipe-cube-logo{
     width: 200px;
@@ -138,29 +152,33 @@
 
 .equipe-cards-4:hover .equipe-cube-logo {
     opacity: 0.5 ; 
-    transition: opacity 0.3s ease-in-out;
+    scale: 1.2;
+    transition: opacity 0.3s ease-in-out, scale 0.3s ease-in-out ;
 }
 
 .equipe-atelier-logo{
     width: 200px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 15%;
     opacity: 0;
 }
 
 .equipe-cards-2:hover .equipe-atelier-logo {
     opacity: 0.5 ; 
-    transition: opacity 0.3s ease-in-out;
+    scale: 1.2;
+    transition: opacity 0.3s ease-in-out, scale 0.3s ease-in-out ;
 }
 .equipe-concours-logo{
     position: absolute;
+    top: 10%;
     opacity: 0;
 }
 
 .equipe-cards-5:hover .equipe-concours-logo {
     opacity: 0.5 ; 
-    transition: opacity 0.3s ease-in-out;
+    scale: 1.2;
+    transition: opacity 0.3s ease-in-out, scale 0.3s ease-in-out ;
 }
 
 .equipe-gamedev-logo{
@@ -179,5 +197,6 @@
 }
 .equipe-cards-3:hover .equipe-gamedev-logo, .equipe-cards-3:hover .equipe-manette-logo  {
     opacity: 0.9 ; 
-    transition: opacity 0.3s ease-in-out;
+    scale: 1.2;
+    transition: opacity 0.3s ease-in-out, scale 0.3s ease-in-out ;
 }
