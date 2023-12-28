@@ -1,6 +1,6 @@
-import './about.css';
+import './projet.css';
 
-function About() {
+function Projet() {
     return (
 
       <div className="about-conteiner">
@@ -20,4 +20,4 @@ function About() {
     );
   }
 
-  export default About;
+  export default Projet;
