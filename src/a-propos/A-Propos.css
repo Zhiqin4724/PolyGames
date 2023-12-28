@@ -23,3 +23,14 @@
     font-weight: 400;
     line-height: normal;
 }
+.apropros-bg-text{
+    position: absolute;
+    top: 50%;
+    font-size: 360px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: 10%;
+    white-space: nowrap;
+    color: rgb(253, 114, 0);
+    font-weight: bold;
+    width: 50%;
+}
