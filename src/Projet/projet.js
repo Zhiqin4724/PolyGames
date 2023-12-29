@@ -4,6 +4,7 @@ import cube from './../logo/CUBE_logoDiscord.png'
 import atelier from './../logo/Poly Games Atelier Unity A2018.jpg'
 import gamedev from './../logo/Poly Games Jeu VR_AR.jpg'
 import concours from './../logo/2023_CUBI_Banner-1.jpg'
+import polygames from './../logo/pg_logo_manette.png'
 import React, { useRef } from 'react';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 const items = [
@@ -77,6 +78,11 @@ function Projet() {
       {items.map((item, index) =>
         <Single item={item} key={items.id} index={index} />
       )}
+      </div>
+      <div className='projet-parallax-container'>
+        <div className='projet-parallax-polygames'>
+          <img src={polygames} alt='polygames' className='projet-polygames-logo'></img>
+        </div>
       </div>
     </div>
   );
