@@ -1,5 +1,9 @@
 import './projet.css';
 import gamejam from './../logo/gamejam_square.png'
+import cube from './../logo/CUBE_logoDiscord.png'
+import atelier from './../logo/Poly Games Atelier Unity A2018.jpg'
+import gamedev from './../logo/Poly Games Jeu VR_AR.jpg'
+import concours from './../logo/2023_CUBI_Banner-1.jpg'
 import React, { useRef } from 'react';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 const items = [
@@ -12,25 +16,25 @@ const items = [
   {
     id: 2,
     title: "Atelier",
-    img: { gamejam },
+    img: atelier,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
     id: 3,
     title: "GameDev",
-    img: { gamejam },
+    img: gamedev,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
     id: 4,
     title: "Collaboration",
-    img: { gamejam },
+    img: cube,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
     id: 5,
     title: "Concours",
-    img: { gamejam },
+    img: concours,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   }
 ];
