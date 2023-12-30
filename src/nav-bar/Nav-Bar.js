@@ -3,6 +3,9 @@ import logo from './../logo/pg_logo_manette.png';
 import hamburger from './../logo/hamburger.png'
 import { motion, useAnimation } from 'framer-motion';
 import { useState, useEffect } from 'react';
+
+
+
 function NavBar() {
     const [open, setOpen] = useState(false);
     const navbarBgControls = useAnimation();
@@ -26,6 +29,7 @@ function NavBar() {
         }
     }
     const linksItem = ["Homepage", "APropros", "Equipe", "Commandite", "Contact"]
+    
     useEffect(() => {
         // Trigger the initial animation based on the initial state
         navbarBgControls.start(open ? "open" : "closed");
@@ -36,8 +40,34 @@ function NavBar() {
         // Toggle the animation of navbar-bg
        await navbarBgControls.start(open ? "closed" : "open");
       };
+    const [scrolling, setScrolling] = useState(false);
+    const [scrollTop, setScrollTop] = useState(0);
+    const controls = useAnimation();
+
+    useEffect(() => {
+        const handleScroll = () => {
+          setScrollTop(window.scrollY);
+          setScrolling(window.scrollY > scrollTop);
+    
+          // If scrolling down, slide the navbar up
+          if (window.scrollY > scrollTop) {
+            controls.start({ y: '-100%', transition: { duration: 0.3 } });
+          } else {
+            // If scrolling up, slide the navbar back down
+            controls.start({ y: '0%', transition: { duration: 0.3 } });
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, [scrollTop, controls]);
     return (
-            <div className="container-navbar">
+            <motion.div  className={`container-navbar ${scrolling ? 'hidden' : ''}`}
+            initial={{ y: 0 }}
+            animate={controls}>
                 <div className="nav-container">
                     <div className="navbar-logo-container">
                         <motion.div className='sidebar' animate={open ? "open" : "closed"}>
@@ -71,7 +101,7 @@ function NavBar() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
     );
 }
 
