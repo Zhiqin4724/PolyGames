@@ -1,0 +1,38 @@
+.portfolio-container{
+    height: 3000px;
+}
+.portfolio-card-2{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 700px;
+    height: 700px;
+    margin-top: 5%;
+    background-color: #023049;
+}
+
+.portfolio-card-1{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 700px;
+    height: 700px;
+    margin-right: 5%;
+    display: flex;
+    background-color: #023049;
+}
+.portfolio-list{
+    padding-top: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.portfolio-image{
+    border: 1px solid;
+    width: 650px;
+    height: 500px;
+    margin-top: 5%;
+}
+.portfolio-image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

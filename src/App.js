@@ -6,6 +6,7 @@ import Equipe from './Equipe/equipe.js';
 import Commandite from './Commandite/commandite.js';
 import Projet from './Projet/projet.js';
 import Commentaire from './Commentaire/commentaire.js';
+import Portfolio from './portfolio/portfolio.js';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <section id='Homepage'><NavBar ></NavBar></section>
     <section id="APropros"><Apropos ></Apropos></section>
     <section id="Equipe"><Equipe ></Equipe></section>
+    <section id="portfolio"><Portfolio></Portfolio></section>
     <section id='projet'><Projet></Projet></section>
     <section id="Commandite"><Commandite ></Commandite></section>
     <section id='Commentaire'><Commentaire></Commentaire></section>
