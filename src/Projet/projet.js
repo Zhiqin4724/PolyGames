@@ -39,6 +39,7 @@ const items = [
   }
 ];
 
+
 const Single = ({ item, index }) => {
   const ref = useRef()
   const { scrollYProgress } = useScroll({ target: ref,})
@@ -58,6 +59,8 @@ const Single = ({ item, index }) => {
   )
 }
 
+
+
 function Projet() {
   const ref = useRef()
   const { scrollYProgress } = useScroll({ target: ref, offset: ["end end", "start start"] })
@@ -68,6 +71,7 @@ function Projet() {
   return (
 
     <div className="projet-container" ref={ref}>
+      <div className='projet-padding'></div>
       <div className='projet-progress-container'>
       <div className="projet-title">Projet</div>
       

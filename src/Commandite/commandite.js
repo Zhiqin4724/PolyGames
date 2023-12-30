@@ -4,17 +4,9 @@ function Commandite() {
     return (
 
       <div className="container-commandite">
-        <div id="title">Commanditaire</div>
-        <div className="logo-container">
-            <div id="logo-polygames">
-
-            </div>
-            <div id="logo-contact">
-
-            </div>
-            <div id="logo-polytechnique">
-
-            </div>
+        <div className="commanditaire-title">Nos Commanditaires</div>
+        <div className='commanditaire-list'>
+          <div className='commanditaire-box'></div>
         </div>
       </div>
     );

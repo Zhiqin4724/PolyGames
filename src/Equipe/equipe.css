@@ -2,7 +2,7 @@
 .container-equipe{
     width: 100%;
     height: 1050px;
-    background-color: aqua;
+    background-color: bisque;
 }
 .equipe-cards-container{
     display: flex;
@@ -109,9 +109,13 @@
 }
 .equipe-title{
     margin-top: 5%;
+    font-family: Source Code Pro, monospace;
+    font-size: 45px;
 }
 .equipe-title-2{
     margin-top: 10%;
+    font-family: Source Code Pro, monospace;
+    font-size: 45px;
 }
 .equipe-cube-logo{
     width: 200px;

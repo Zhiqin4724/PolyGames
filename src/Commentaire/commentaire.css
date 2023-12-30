@@ -1,0 +1,57 @@
+.container-commentaire{
+    height: 1050px;
+    width: 100%;
+    background-color: rgb(3, 1, 26);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.commentaire-text{
+    color: white;
+    margin-top: 5%;
+    font-size: 24px;
+    /* font-style: ; */
+}
+.commentaire-title{
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.commentaire-nom{
+    width: 800px;
+    height: 40px;
+    border-radius: 5px;
+}
+.commentaire-email{
+    width: 800px;
+    height: 40px;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+.commentaire-form-text{
+    height: 400px;
+    width: 800px;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+.commentaire-form{
+    display: flex;
+    flex-direction: column;
+}
+.commentaire-text-container{
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.commentaire-form-container{
+    margin-top: 10%;
+    margin-right: 5%;
+}
+.commentaire-button{
+    margin-top: 5%;
+    width: 150px;
+    height: 50px;
+}

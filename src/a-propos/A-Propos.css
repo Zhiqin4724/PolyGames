@@ -11,22 +11,25 @@
     text-align: left;
 }
 #sub-title{
-    width: 30%;
+    width: 50%;
     margin-top: 2%;
-    margin-left: 2%;
+    font-size: 45px;
+    font-family: Source Code Pro, monospace;
 }
 #title-a-propros{
     color: #FFF;
-    font-family: Seymour One;
-    font-size: 64px;
+    font-family: Consolas, monospace;
+    font-size: 100px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: normal;
+    width: 800px;
+    text-align: left;
 }
 .apropros-bg-text{
     position: absolute;
-    top: 50%;
-    font-size: 360px;
+    top: 55%;
+    font-size: 340px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     opacity: 10%;
     white-space: nowrap;
