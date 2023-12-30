@@ -4,6 +4,20 @@ import doublestalion from './../logo/pfNpTEu7_400x400.png'
 import eidos from './../logo/eidos-montreal-logo.jpg'
 import unity from './../logo/unity.png'
 
+const variants = {
+  initial: {
+    y: 500,
+    opacity: 0,
+  },
+  animate:{
+    y:0,
+    opacity:1 ,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.1
+    }
+  }
+}
 function Commandite() {
     return (
 
@@ -12,8 +26,6 @@ function Commandite() {
         <div className='commanditaire-list'>
             <img src={ubisoft} alt='' className='commanditaire-image'></img>
             <img src={doublestalion} alt='' className='commanditaire-image'></img>
-            <img src={eidos} alt='' className='commanditaire-image'></img>
-            <img src={unity} alt='' className='commanditaire-image'></img>
         </div>
       </div>
     );
