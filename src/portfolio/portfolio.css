@@ -45,15 +45,17 @@
     font-size: 40px;
     font-weight: bold;
     margin-left: 5%;
+    margin-top: 2%;
 }
 .portfolio-description{
     color: white;
     font-size: 18px;
     margin-left: 5%;
-    width: 85%;
+    width: 600px;
     overflow: hidden;
     height: 15%;
     text-align: justify;
+    margin-top: 1%;
 }
 
 .portfolio-card-2{

@@ -11,10 +11,11 @@
     text-align: left;
 }
 #sub-title{
-    width: 50%;
+    width: 600px;
     margin-top: 2%;
-    font-size: 45px;
+    font-size: 40px;
     font-family: Source Code Pro, monospace;
+    letter-spacing: -1.5px;
 }
 #title-a-propros{
     color: #FFF;
@@ -25,6 +26,7 @@
     line-height: normal;
     width: 800px;
     text-align: left;
+    letter-spacing: -2%;
 }
 .apropros-bg-text{
     position: absolute;
