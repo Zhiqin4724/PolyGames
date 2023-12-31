@@ -1,5 +1,5 @@
 .container-contact{
-    background: #035F8E;
+    background: #b5a28b;
     height: 400px;
 }
 .logo-container{
@@ -8,6 +8,7 @@
     align-items: center;
     margin-left: 5%;
     margin-top: 5%;
+    margin-right: 5%;
 }
 .logo{
     cursor: pointer;
@@ -21,6 +22,7 @@
     flex-direction: row;
     position: relative;
     width: 20%;
+    padding-left: -5%;
 }
 #logo-poly{
     width: 50%;
@@ -71,4 +73,8 @@
     align-items: center;
     margin-left: 10%;
     font-size: 18px;
+}
+.contact-link{
+    margin-left: 5%;
+    margin-right: 5%;
 }

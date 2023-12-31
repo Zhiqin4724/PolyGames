@@ -4,6 +4,7 @@ import email from './../logo/mail 1.png';
 import instagram from './../logo/instagram (1) 1.png';
 import polytechnique from './../logo/image 2.png'
 import polygames from './../logo/pg_logo_manette.png'
+import discord from './../logo/discord.png'
 import copyright from './../logo/letter-c (1) 1.png'
 function Contact() {
     return (
@@ -18,9 +19,10 @@ function Contact() {
                 <img src={polytechnique} alt="polytechnique"></img>
             </div>
             <div class="logo-contact">
-                <img src={facebook} alt="facebook" className="logo"></img>
-                <img src={email} alt="facebook" className="logo"></img>
-                <img src={instagram} alt="facebook" className="logo"></img>
+            <a href='https://www.facebook.com/polymtlgames' className='contact-link'>  <img src={facebook} alt="facebook" className="logo"></img></a>
+                <a href='polytechniquegames@gmail.com' className='contact-link'>  <img src={email} alt="email" className="logo"></img></a>
+                <a href='https://www.instagram.com/_poly.games_/' className='contact-link'>  <img src={instagram} alt="instagram" className="logo"></img></a>
+              <a href='https://discord.gg/gcNtVySk' className='contact-link'>  <img src={discord} alt='discord' className='logo'></img></a>
             </div>
             <div class="logo-contact">
                 <img src={polygames} alt="polygames" id="logo-poly"></img>
