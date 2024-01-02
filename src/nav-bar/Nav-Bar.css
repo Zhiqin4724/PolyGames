@@ -36,7 +36,7 @@
 .info::after {
     content: '';
     position: absolute;
-    bottom: 40%;
+    bottom: 35%;
     left: 0;
     width: 0;
     height: 2px;

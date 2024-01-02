@@ -58,6 +58,7 @@ function Apropos() {
         Libérez votre développeur de jeux intérieur, apprenez, créez, partagez !
         </motion.div>
         </motion.div>
+        <motion.button className='apropros-button'>Contact</motion.button>
         <motion.div className='apropros-bg-text' variants={textslide} initial="initial" animate="animate">
           Game Club Creation
         </motion.div>

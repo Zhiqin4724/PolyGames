@@ -46,7 +46,7 @@ function Equipe() {
           onAnimationComplete={handleAnimationComplete}>Ipsum Lorem</motion.div>
           <img></img>
         </div>
-        <motion.div className='equipe-cards-container'>
+        {/* <motion.div className='equipe-cards-container'>
           
             <motion.div className='equipe-cards-1' variants={variants}
           initial="initial"
@@ -93,7 +93,7 @@ function Equipe() {
               <img src={concours} alt='concours' className='equipe-concours-logo'></img>
             </motion.div>
           
-        </motion.div>
+        </motion.div> */}
       </div>
     );
   }
