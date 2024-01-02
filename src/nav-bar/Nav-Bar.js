@@ -37,6 +37,7 @@ function NavBar() {
 
     const handleToggle = async () => {
         setOpen((prev) => !prev);
+        await navbarBgControls.start("closed");
         // Toggle the animation of navbar-bg
        await navbarBgControls.start(open ? "closed" : "open");
       };
@@ -46,24 +47,29 @@ function NavBar() {
 
     useEffect(() => {
         const handleScroll = () => {
-          setScrollTop(window.scrollY);
-          setScrolling(window.scrollY > scrollTop);
+            setScrollTop(window.scrollY);
+            setScrolling(window.scrollY > scrollTop);
     
-          // If scrolling down, slide the navbar up
-          if (window.scrollY > scrollTop) {
-            controls.start({ y: '-100%', transition: { duration: 0.3 } });
-          } else {
-            // If scrolling up, slide the navbar back down
-            controls.start({ y: '0%', transition: { duration: 0.3 } });
-          }
+            // If the sidebar is open, don't apply scrolling animations
+            if (open) {
+                return;
+            }
+    
+            // If scrolling down, slide the navbar up
+            if (window.scrollY > scrollTop) {
+                controls.start({ y: '-100%', transition: { duration: 0.3 } });
+            } else {
+                // If scrolling up, slide the navbar back down
+                controls.start({ y: '0%', transition: { duration: 0.3 } });
+            }
         };
     
         window.addEventListener('scroll', handleScroll);
     
         return () => {
-          window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
-      }, [scrollTop, controls]);
+    }, [scrollTop, controls, open]);
     return (
             <motion.div  className={`container-navbar ${scrolling ? 'hidden' : ''}`}
             initial={{ y: 0 }}
