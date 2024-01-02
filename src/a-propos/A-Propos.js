@@ -52,7 +52,7 @@ function Apropos() {
       <div className="container-a-propos">
         <motion.div id="left-title" variants={textvariants} initial="initial" animate="animate">
         <motion.div id="title-a-propros" variants={textvariants}>
-        Bienvenue sur Polygames
+        Bienvenue sur PolyGames
         </motion.div>
         <motion.div id="sub-title" variants={textvariants}>
         Libérez votre développeur de jeux intérieur, apprenez, créez, partagez !

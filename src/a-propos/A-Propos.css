@@ -27,6 +27,10 @@
     width: 800px;
     text-align: left;
     letter-spacing: -2%;
+    text-shadow: -1px -1px 0 #00000042,  
+    1px -1px 0 #00000038,
+    -1px 1px 0 #00000028,
+    1px 1px 0 #00000038;
 }
 .apropros-bg-text{
     position: absolute;

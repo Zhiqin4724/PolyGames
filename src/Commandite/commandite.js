@@ -1,12 +1,11 @@
 import './commandite.css';
 import ubisoft from './../logo/ubisoft.png'
 import doublestalion from './../logo/pfNpTEu7_400x400.png'
-import eidos from './../logo/eidos-montreal-logo.jpg'
-import unity from './../logo/unity.png'
+import { motion } from 'framer-motion';
 
 const variants = {
   initial: {
-    y: 500,
+    y: 200,
     opacity: 0,
   },
   animate:{
@@ -22,11 +21,11 @@ function Commandite() {
     return (
 
       <div className="container-commandite">
-        <div className="commanditaire-title">Nos Commanditaires</div>
-        <div className='commanditaire-list'>
+        <motion.div className="commanditaire-title" variants={variants} initial="initial" whileInView="animate">Nos Commanditaires</motion.div>
+        <motion.div className='commanditaire-list' variants={variants} initial="initial" whileInView="animate">
             <img src={ubisoft} alt='' className='commanditaire-image'></img>
             <img src={doublestalion} alt='' className='commanditaire-image'></img>
-        </div>
+        </motion.div>
       </div>
     );
   }
