@@ -1,11 +1,11 @@
 import './equipe.css';
 import React, { useState } from 'react';
-import cube from './../logo/CUBE_logoDiscord.png'
-import gamejam from './../logo/gamejam_square.png'
-import atelier from './../logo/creative-team.png'
-import gamedev from './../logo/coding (1) 1.png'
-import concours from './../logo/trophy.png'
-import manette from './../logo/video-games 1.png'
+// import cube from './../logo/CUBE_logoDiscord.png'
+// import gamejam from './../logo/gamejam_square.png'
+// import atelier from './../logo/creative-team.png'
+// import gamedev from './../logo/coding (1) 1.png'
+// import concours from './../logo/trophy.png'
+// import manette from './../logo/video-games 1.png'
 import { motion } from 'framer-motion';
 
 const variants = {
@@ -33,7 +33,6 @@ function Equipe() {
 
       <div className="container-equipe">
         <div className='equipe-title-container'>
-          <img></img>
           <motion.div className='equipe-title' variants={variants}
           initial="initial"
           animate={hasAnimated ? "animate" : "initial"}
@@ -44,7 +43,6 @@ function Equipe() {
           animate={hasAnimated ? "animate" : "initial"}
           whileInView={hasAnimated ? undefined : "animate"}
           onAnimationComplete={handleAnimationComplete}>Ipsum Lorem</motion.div>
-          <img></img>
         </div>
         {/* <motion.div className='equipe-cards-container'>
           
