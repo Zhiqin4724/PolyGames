@@ -9,6 +9,9 @@ import Commentaire from './Commentaire/commentaire.js';
 import Portfolio from './portfolio/portfolio.js';
 import Valeur from './Valeur/valeur.js';
 import TV from './tv/tv.js';
+// import { Application } from '@splinetool/runtime';
+
+
 
 function App() {
   return (
@@ -24,7 +27,6 @@ function App() {
     <section id="Commandite"><Commandite ></Commandite></section>
     <section id='Commentaire'><Commentaire></Commentaire></section>
     <section id="Contact"><Contact ></Contact></section>
-    <TV></TV>
     </div></>
   );
 }

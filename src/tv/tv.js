@@ -1,77 +1,99 @@
 // ThreeDModel.js
 import React, { useEffect } from 'react';
+import './tv.css';
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import tv from './../3Dobject/game.glb'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import SplineLoader from '@splinetool/loader';
+import { animate } from 'framer-motion';
+
 
 
 const TV = () => {
-  useEffect(() => {
-    // Scene
-    const scene = new THREE.Scene();
+    // camera
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
+    camera.position.set(800, 500, 600);
+    camera.rotation.set(0, 30, 0)
+camera.quaternion.setFromEuler(new THREE.Euler(0, 0, 0));
 
-    // Camera
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.z = 0;
-    camera.position.x = 10;
-    camera.position.y = 4;
-    camera.rotation.y = Math.PI / 2;
+// scene
+const scene = new THREE.Scene();
 
-    
+// spline scene
+const loader = new SplineLoader();
+loader.load(
+  'https://prod.spline.design/vbyd8W3Qp2hr5FnI/scene.splinecode',
+  (splineScene) => {
+    // splineScene.position.set(200, -100, -300);
+    splineScene.position.set(0, 0, 0);
+    scene.add(splineScene);
+  }
+);
+//orbit
 
-    // Renderer
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.getElementById("container3DTV").appendChild(renderer.domElement);
-    const controls = new OrbitControls(camera, renderer.domElement);
-    // Lights
-    const topLight = new THREE.DirectionalLight(0xffffff, 1);
-    topLight.position.set(500, 500, 500);
-    topLight.castShadow = true;
-    scene.add(topLight);
 
-    const ambientLight = new THREE.AmbientLight(0x333333, 5);
-    scene.add(ambientLight);
+// renderer
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+// renderer.setAnimationLoop(animate);
+document.body.appendChild(renderer.domElement);
 
-    // GLTF Loader
-    const loader = new GLTFLoader();
-    loader.load(tv, (gltf) => {
-      scene.add(gltf.scene);
-    });
+// scene settings
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFShadowMap;
 
-    // Resize Handler
-    const handleResize = () => {
-      const newWidth = window.innerWidth;
-      const newHeight = window.innerHeight;
+// scene.background = new THREE.Color('0xffffff');
+renderer.setClearColor(0x000000, 0)
 
-      camera.aspect = newWidth / newHeight;
-      camera.updateProjectionMatrix();
+// orbit controls
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.25;
+controls.screenSpacePanning = false;
+controls.maxPolarAngle = Math.PI / 2;
+controls.enableZoom = false;
 
-      renderer.setSize(newWidth, newHeight);
-    };
+controls.enableRotate = true;
+controls.enableRotateUp = false;
+controls.enableRotateLeft = true;
+controls.enableRotateRight = true;
+controls.enableRotateUp = false;
+controls.enableRotateDown = false;
 
-    window.addEventListener('resize', handleResize);
+window.addEventListener('resize', onWindowResize);
+function onWindowResize() {
+  camera.left = window.innerWidth / - 2;
+  camera.right = window.innerWidth / 2;
+  camera.top = window.innerHeight / 2;
+  camera.bottom = window.innerHeight / - 2;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
 
-    // Animation
-    const animate = () => {
-      requestAnimationFrame(animate);
-      controls.update();
+function animate(time) {
+  controls.update();
+  renderer.render(scene, camera);
+  requestAnimationFrame(animate);
+}
 
-      renderer.render(scene, camera);
-    };
+  animate();
+  // Create a container element
+  const containerRef = React.useRef(null);
 
-    animate();
+  // Append renderer's DOM element to the container
+  React.useEffect(() => {
+    if (containerRef.current) {
+      containerRef.current.appendChild(renderer.domElement);
+    }
+  }, []);
 
-    // Clean up on unmount
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []); // Empty dependency array to run the effect only once
+  // ...
 
   return (
-    <div id="container3DTV" />
+    <div className="tv-canvas-container" ref={containerRef}>
+      {/* The renderer's DOM element will be appended here */}
+    </div>
   );
-};
-
+}
 export default TV;
+
+

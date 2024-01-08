@@ -1,5 +1,6 @@
 import './A-Propos.css';
 import {motion} from 'framer-motion'
+import TV from '../tv/tv';
 
 const textvariants = {
   initial: {
@@ -22,7 +23,7 @@ const textslide = {
   animate:{
     x: "-450%",
     transition:{
-      duration: 10,
+      duration: 7,
       repeat: Infinity,
       repeatType: "loop", 
       ease: "linear",
@@ -36,8 +37,8 @@ const textslide2 = {
   animate:{
     x: "-450%",
     transition:{
-      delay: 5,
-      duration: 10,
+      delay: 3.5,
+      duration: 7,
       repeat: Infinity,
       repeatType: "loop", 
       ease: "linear",
@@ -59,6 +60,7 @@ function Apropos() {
         </motion.div>
         </motion.div>
         <motion.button className='apropros-button'>Contact</motion.button>
+        <TV></TV>
         <motion.div className='apropros-bg-text' variants={textslide} initial="initial" animate="animate">
           Game Club Creation
         </motion.div>
