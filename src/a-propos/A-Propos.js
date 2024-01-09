@@ -1,6 +1,7 @@
 import './A-Propos.css';
 import {motion} from 'framer-motion'
 import TV from '../tv/tv';
+import Loading from '../loading/loading';
 
 const textvariants = {
   initial: {

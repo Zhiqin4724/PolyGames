@@ -11,14 +11,18 @@
     text-align: left;
 }
 #sub-title{
+    position: relative;
     width: 600px;
     margin-top: 2%;
     font-size: 40px;
     font-family: Source Code Pro, monospace;
     letter-spacing: -1.5px;
+    z-index: 10;
+    color: #4b4b4b;
 }
 #title-a-propros{
-    color: #FFF;
+    position: relative;
+    color: #000000;
     font-family: Consolas, monospace;
     font-size: 100px;
     font-style: normal;
@@ -27,10 +31,11 @@
     width: 800px;
     text-align: left;
     letter-spacing: -2%;
-    text-shadow: -1px -1px 0 #00000042,  
+    /* text-shadow: -1px -1px 0 #00000042,  
     1px -1px 0 #00000038,
     -1px 1px 0 #00000028,
-    1px 1px 0 #00000038;
+    1px 1px 0 #00000038; */
+    z-index: 10;
 }
 .apropros-bg-text{
     position: absolute;
