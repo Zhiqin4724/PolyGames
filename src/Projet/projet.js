@@ -5,7 +5,9 @@ import atelier from './../logo/Poly Games Atelier Unity A2018.jpg'
 import gamedev from './../logo/Poly Games Jeu VR_AR.jpg'
 import concours from './../logo/2023_CUBI_Banner-1.jpg'
 import React, { useRef } from 'react';
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
+
+
 const items = [
   {
     id: 1,
@@ -44,15 +46,17 @@ const Single = ({ item, index }) => {
   const ref = useRef()
   const { scrollYProgress } = useScroll({ target: ref,})
   const y = useTransform(scrollYProgress, [0,1] , [-300, 300] );
+
+  const marginLeft = index % 2 === 0 ? '50%' : 'auto';
   return (
     <section ref={ref} >
       
-      <div className={`projet-card ${index === 0 ? 'first-card' : ''}`}>
+      <div className={`projet-card ${index === 0 ? 'first-card' : ''}`} style={{ marginLeft }}>
       <img src={item.img} alt='' className='projet-card-image'></img>
-      <motion.div className='projet-card-text' style={{y}}>
+      <div className='projet-card-text' style={{y}}>
       <div className='projet-card-title' >{item.title}</div>
       <div className='projet-card-description'>{item.desc}</div>
-      </motion.div>
+      </div>
       </div>
       
     </section>
@@ -63,20 +67,16 @@ const Single = ({ item, index }) => {
 
 function Projet() {
   const ref = useRef()
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["end end", "start start"] })
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-  })
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] })
+  const parallaxY = useTransform(scrollYProgress, [0, 1], ["0%", "650%"]);
+  const rotateY = useTransform(scrollYProgress, [0, 1], [-30, 30]);
+ 
+
   return (
 
     <div className="projet-container" ref={ref}>
       <div className='projet-padding'></div>
-      <div className='projet-progress-container'>
-      <div className="projet-title">Projet</div>
-      
-      <motion.div style={{scaleX}} className='project-progress-bar'></motion.div>
-      </div>
+      <motion.div className='projet-bg-title' style={{ y: parallaxY, rotateY }}>Projet</motion.div>
       <div className='projet-card-container'>
       {items.map((item, index) =>
         <Single item={item} key={items.id} index={index} />
