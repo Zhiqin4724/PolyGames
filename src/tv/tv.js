@@ -14,7 +14,7 @@ const TV = () => {
   useEffect(() => {
     // camera
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
-    camera.position.set(500, 300, 400);
+    camera.position.set(400, 300, 300);
     camera.rotation.set(0, 30, 0);
     camera.quaternion.setFromEuler(new THREE.Euler(0, 0, 0));
 
@@ -33,30 +33,11 @@ const TV = () => {
     directionalLight.position.set(0, 500, 0); // Set initial position
     scene.add(directionalLight);
 
-    const directionalLightHelper = new THREE.DirectionalLightHelper(directionalLight, 5); // 5 is the size of the helper
-    scene.add(directionalLightHelper);
-
-
-
-    const pointLight = new THREE.PointLight(0xffffff, 1, 100);
-    pointLight.position.set(0, 100, 0);
-    scene.add(pointLight);
-
-    // Create a point light helper
-    const pointLightHelper = new THREE.PointLightHelper(pointLight, 1); // 1 is the size of the helper
-    scene.add(pointLightHelper);
-
-    // const geometry = new THREE.BoxGeometry(100, 100, 100);
-    // const material = new THREE.MeshPhongMaterial({ color: 0x00ff00 });
-    // const cube = new THREE.Mesh(geometry, material);
-    // cube.position.set(0, 100, 0); // Position the cube to be affected by the ambient light
-    // scene.add(cube);
-
 
     // spline scene
     const loader = new SplineLoader();
     loader.load(
-      'https://prod.spline.design/vbyd8W3Qp2hr5FnI/scene.splinecode',
+      'https://prod.spline.design/4gIEYz82ppIhAvDH/scene.splinecode',
       (splineScene) => {
         splineScene.position.set(0, 0, 0);
         scene.add(splineScene);
@@ -79,13 +60,24 @@ const TV = () => {
     controls.screenSpacePanning = false;
     controls.maxPolarAngle = Math.PI / 2;
     controls.enableZoom = false;
-    controls.enableRotate = true;
+    controls.enableRotate = false;
     controls.enableRotateUp = false;
     controls.enableRotateLeft = true;
     controls.enableRotateRight = true;
     controls.enableRotateUp = false;
     controls.enableRotateDown = false;
 
+    controls.target.set(0, 20, 0);
+
+    controls.enablePan = false;
+    controls.enableKeys = false;
+
+    function handleMouseMove(event) {
+      const sensitivity = 0.010; // Adjust the sensitivity to control the movement intensity
+      camera.position.x -= event.movementX * sensitivity;
+      camera.position.y += event.movementY * sensitivity;
+    }
+    window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('resize', onWindowResize);
 
     function onWindowResize() {
@@ -96,9 +88,10 @@ const TV = () => {
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     }
+    
 
     function animate(time) {
-      controls.update();
+      // controls.update();
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     }

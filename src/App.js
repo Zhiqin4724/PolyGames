@@ -6,6 +6,7 @@ import Commandite from './Commandite/commandite.js';
 import Projet from './Projet/projet.js';
 import Commentaire from './Commentaire/commentaire.js';
 import Valeur from './Valeur/valeur.js';
+import Portfolio from './portfolio/portfolio.js';
 import Loading from './loading/loading.js';
 // import { Application } from '@splinetool/runtime';
 

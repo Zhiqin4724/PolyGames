@@ -1,7 +1,7 @@
 .container-a-propos{
     width: 100%;
     height: 1050px;
-    background: linear-gradient(0deg, bisque 50%, transparent);
+    background: linear-gradient(0deg, rgb(253, 231, 203) 80%, rgb(235, 230, 225));
     position: relative;
 }
 #left-title{
