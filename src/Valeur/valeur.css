@@ -1,5 +1,8 @@
 .valeur-container{
-    background: linear-gradient(180deg, rgb(253, 231, 203) , transparent 40%);
+    /* background: linear-gradient(180deg, rgb(253, 231, 203) , transparent 40%); */
+    /* background: linear-gradient(180deg, #011018 , transparent); */
+    background-color: #011018;
+
     height: 1300px;
 
 }
@@ -11,6 +14,7 @@
     /* font-weight: bold; */
     /* color: #8a9faa; */
     font-family: Source Code Pro, monospace;
+    color: white;
 
 }
 .valeur-list-container{
@@ -37,6 +41,7 @@
     align-items: center;
     height: 100px;
     width: 80%;
+    color: white;
 }
 .valeur-card-title-container{
     height: 100px;
@@ -49,6 +54,7 @@
     margin-top: 10%;
     overflow: hidden;
     text-align: center;
+    color: white;
 
 }
 .valeur-image{

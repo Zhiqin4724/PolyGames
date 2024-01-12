@@ -11,6 +11,7 @@
     color: white;
     margin-top: 5%;
     font-size: 18px;
+    width: 80%;
     /* font-style: ; */
 }
 .commentaire-title{
@@ -54,4 +55,39 @@
     margin-top: 5%;
     width: 150px;
     height: 50px;
+}
+.commanditaire-image{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+
+    /* object-fit: cover; */
+}
+.commanditaire-image:hover{
+    scale: 1.2;
+    transition: scale ease-in-out 0.5s;
+}
+.commanditaire-title{
+    margin-top: 30%;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding-top: 5%;
+    
+}
+.commanditaire-list{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.commanditaire-image-doublestalion{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    margin-left: 10%;
+}
+.commanditaire-image-doublestalion:hover{
+    scale: 1.2;
+    transition: scale ease-in-out 0.5s;
 }

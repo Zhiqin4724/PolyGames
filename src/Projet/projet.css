@@ -1,8 +1,8 @@
 .projet-container{
     width: 100%;
-    height: 500vh;
+    height: 300vh;
     /* background: radial-gradient(circle,  #012132 30%, #00141e 100%); */
-    background-color: white;
+    background-color: rgb(32, 32, 32);
     position: relative;
     overflow: hidden;
 }
@@ -31,16 +31,30 @@
     padding-top: 2%;
 }
 .projet-card-container{
-    margin-top: 5%;
-    margin-left: 15%;
-    scroll-snap-type: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     z-index: 10;
 }
 .projet-card{
-    margin-top: 20%;
+    padding-top: 2%;
     display: flex;
     flex-direction: column;
+    scroll-snap-align: start;
     z-index: 10;
+    width: 100%;
+}
+.projet-card-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1450px;
+    height: 800px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }
 .projet-card-image{
     width: 600px;
@@ -74,12 +88,102 @@
     z-index: 10;
     font-size: 18px;
 }
-
+.projet-expand-button{
+    width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Set it equal to the width for a perfect circle */
+  border-radius: 50%;
+  background-color: #fff; /* Set the background color as needed */
+  border: 1px solid #ccc; /* Optional: Add border styling */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+    z-index: 10;
+}
 .projet-bg-title{
     display: flex;
     justify-content: center;
-    color: #ffedd7;
+    color: #ffffff;
     font-size: 600px;
     z-index: 1;
-    transform: rotateY(60deg);
+    font-weight: bold;
+}
+
+.projet-card-1{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.projet-card-1 .projet-card-image{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 10;
+}
+.projet-card-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1050px;
+    height: 600px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-left: 1%;
+    
+}
+.projet-card-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1050px;
+    height: 600px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.projet-card-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-left: 1%;
+}
+.projet-card-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1650px;
+    height: 600px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 1%;
+}
+.projet-card-line1{
+    display: flex;
+    flex-direction: row;
+}
+.projet-card-line2{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
 }

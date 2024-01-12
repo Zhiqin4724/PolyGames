@@ -1,7 +1,9 @@
 import './commentaire.css';
 import { motion } from 'framer-motion';
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import ubisoft from './../logo/ubisoft.png'
+import doublestalion from './../logo/pfNpTEu7_400x400.png'
 const variants = {
   initial: {
     y: 500,
@@ -19,17 +21,14 @@ const variants = {
 
 function Commentaire() {
   const formRef = useRef();
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_qiuxspc', 'template_dw8yh5v', formRef.current, 'KkghyDwreAbkKxkXl')
       .then((result) => {
-          setSuccess(true);
+          console.log(result);
       }, (error) => {
-          setError(true);
+        console.log(error);
       });
   };
     return (
@@ -40,12 +39,16 @@ function Commentaire() {
               LOREM IPSUM
           </motion.div>
           <motion.div className='commentaire-text' variants={variants}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Pour toute question, suggestion ou collaboration, n'hésitez pas à nous contacter. Utilisez le formulaire ci-dessous et nous vous répondrons dès que possible.
+          Nous sommes impatients de vous entendre !
+
+          L'équipe de PolyGames
           </motion.div>
+          <motion.div className="commanditaire-title" >Nos Commanditaires</motion.div>
+          <motion.div className='commanditaire-list' >
+            <img src={ubisoft} alt='' className='commanditaire-image'></img>
+            <img src={doublestalion} alt='' className='commanditaire-image-doublestalion'></img>
+        </motion.div>
         </motion.div>
         <motion.div className='commentaire-form-container' variants={variants} initial="initial" whileInView="animate">
           <motion.form className='commentaire-form' ref={formRef} onSubmit={sendEmail}>
