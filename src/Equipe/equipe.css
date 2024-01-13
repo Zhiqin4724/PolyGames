@@ -2,7 +2,8 @@
 .container-equipe{
     width: 100%;
     height: 400px;
-    background-color: rgb(255, 247, 237);
+    /* background-color: rgb(255, 247, 237); */
+    background-color: white;
 }
 .equipe-cards-container{
     display: flex;
@@ -114,6 +115,11 @@
 }
 .equipe-title-2{
     margin-top: 10%;
+    font-family: Source Code Pro, monospace;
+    font-size: 40px;
+}
+.equipe-title-3{
+    margin-top: 15%;
     font-family: Source Code Pro, monospace;
     font-size: 40px;
 }

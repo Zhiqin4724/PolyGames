@@ -28,7 +28,7 @@ function NavBar() {
             }
         }
     }
-    const linksItem = ["Homepage", "APropros", "Equipe", "Commandite", "Contact"]
+    const linksItem = ["Homepage", "Valeur", "Projet", "Commandite", "Contact"]
     
     useEffect(() => {
         // Trigger the initial animation based on the initial state
@@ -94,13 +94,13 @@ function NavBar() {
                     </div>
                     <div className='content'>
                         <div className='info'>
-                            À Propos
+                            Valeur
                         </div>
                         <div className='info'>
-                            Équipe
+                            Projet
                         </div>
                         <div className='info'>
-                            Commandite
+                            Commentaire
                         </div>
                         <div className='info'>
                             Contact

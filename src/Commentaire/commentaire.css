@@ -9,7 +9,7 @@
 
 .commentaire-text{
     color: rgb(255, 255, 255);
-    margin-top: 5%;
+    margin-top: 7%;
     font-size: 16px;
     width: 80%;
     /* font-style: ; */
@@ -55,11 +55,13 @@
     margin-top: 5%;
     width: 150px;
     height: 50px;
+    background-color:  rgb(255, 247, 237);
 }
 .commanditaire-image{
     height: 100px;
     width: 100px;
     border-radius: 5px;
+    cursor: pointer;
 
     /* object-fit: cover; */
 }
@@ -81,11 +83,12 @@
     margin-right: 10%;
     margin-top: 5%;
 }
-.commanditaire-image-doublestalion{
+a .commanditaire-image-doublestalion{
     height: 100px;
     width: 100px;
     border-radius: 5px;
-    margin-left: 10%;
+    margin-left: 30%;
+    cursor: pointer;
 }
 .commanditaire-image-doublestalion:hover{
     scale: 1.2;

@@ -16,7 +16,9 @@ function Contact() {
         </div>
         <div className="logo-container">
             <div class="logo-contact">
+              <a href='https://www.polymtl.ca/'>
                 <img src={polytechnique} alt="polytechnique"></img>
+                </a>
             </div>
             <div class="logo-contact">
             <a href='https://www.facebook.com/polymtlgames' className='contact-link'>  <img src={facebook} alt="facebook" className="logo"></img></a>

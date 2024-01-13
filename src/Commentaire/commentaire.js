@@ -36,7 +36,7 @@ function Commentaire() {
       <div className="container-commentaire" >
         <motion.div className='commentaire-text-container' variants={variants} initial="initial" whileInView="animate">
           <motion.div className='commentaire-title' variants={variants}>
-              LOREM IPSUM
+              Nous Contacter
           </motion.div>
           <motion.div className='commentaire-text' variants={variants}>
           Pour toute question, suggestion ou collaboration, n'hésitez pas à nous contacter. Utilisez le formulaire ci-dessous et nous vous répondrons dès que possible.
@@ -46,8 +46,8 @@ function Commentaire() {
           </motion.div>
           <motion.div className="commanditaire-title" >Nos Commanditaires</motion.div>
           <motion.div className='commanditaire-list' >
-            <img src={ubisoft} alt='' className='commanditaire-image'></img>
-            <img src={doublestalion} alt='' className='commanditaire-image-doublestalion'></img>
+            <a href='https://www.ubisoft.com/en-us/'><img src={ubisoft} alt='' className='commanditaire-image'></img></a>
+            <a href='https://dblstallion.com/'><img src={doublestalion} alt='' className='commanditaire-image-doublestalion'></img></a>
         </motion.div>
         </motion.div>
         <motion.div className='commentaire-form-container' variants={variants} initial="initial" whileInView="animate">

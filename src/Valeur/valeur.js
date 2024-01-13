@@ -35,7 +35,7 @@ function Valeur() {
                 
                 <div className='valeur-card-title'>Formation Jeux Video</div>
                 
-                <div className='valeur-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id volutpat lacus laoreet non curabitur. </div>
+                <div className='valeur-description'>Maîtrisez le développement de jeux vidéo avec notre formation concise. Plongez dans une formation pratique, libérant le pouvoir créatif pour concevoir des jeux captivants.</div>
             </div>
             <div className='valeur-card'>
             <div className='valeur-image-container'>
@@ -44,7 +44,7 @@ function Valeur() {
                 
                 <div className='valeur-card-title'>Connexion Industrie Jeux</div>
                 
-                <div className='valeur-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id volutpat lacus laoreet non curabitur. </div>
+                <div className='valeur-description'> Découvrez les clés du succès, établissez des contacts et approfondissez vos connaissances pour prospérer dans le monde dynamique du développement de jeux. </div>
             </div>
             <div className='valeur-card'>
             <div className='valeur-image-container'>    
@@ -53,7 +53,7 @@ function Valeur() {
                 
                 <div className='valeur-card-title'>Creativite et Competition</div>
                
-                <div className='valeur-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id volutpat lacus laoreet non curabitur. </div>
+                <div className='valeur-description'>Plongez dans l'univers où la créativité rencontre la compétition. On vous invite à explorer les dimensions innovantes du jeu, stimulant votre créativité tout en vous préparant à exceller dans un environnement compétitif. </div>
             </div>
         </motion.div>
         </div>

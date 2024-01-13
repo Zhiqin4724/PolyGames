@@ -46,8 +46,8 @@ function Projet() {
         </div>
         <div className='projet-card-4'>
           <div className='projet-card-textalign'>
-        <div className='projet-card-text'>Formation et Atelier de Udemy et Unity.</div>
-        <div className='projet-card-title'>Developpement de Jeu !</div>
+        <div className='projet-card-text'>Formation de Unreal Engine et Unity.</div>
+        <div className='projet-card-title'>Développement de Jeu !</div>
         <img src={gamedev} alt='' className='projet-card-image'></img>
         </div>
         </div>
@@ -55,6 +55,8 @@ function Projet() {
         <div className='projet-card-5'>
         <div className='projet-card-text'>Dévoilez votre talent de créateur de jeux dans les concours excitant.</div>
         <div className='projet-card-title'>Concours pour Créateurs de Jeux</div>
+        <div className='projet-card-text-1'>Concours Ubisoft</div>
+        <div className='projet-card-text-2'>Concours Laval Virtual</div>
           <a href='https://montreal.ubisoft.com/en/our-commitments/education/game-lab-competition/' className='projet-card-link-1' >En savoir plus</a>
           <a href='https://laval-virtual.com/en/' className='projet-card-link-2'>En savoir plus</a>
         <img src={concours} alt='' className='projet-card-image'></img>

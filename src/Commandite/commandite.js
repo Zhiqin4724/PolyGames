@@ -21,6 +21,18 @@ function Commandite() {
     return (
 
       <div className="container-commandite">
+        <div className='equipe-title-container'>
+          <motion.div className='equipe-title' variants={variants}
+          initial="initial"
+          whileInView={ "animate"}>Défis techniques</motion.div>
+          <motion.div className='equipe-title-2' variants={variants}
+          initial="initial"
+          whileInView={ "animate"}>Idées brillantes</motion.div>
+          <motion.div className='equipe-title-3' variants={variants}
+          initial="initial"
+          whileInView={ "animate"}>Jeux mémorables</motion.div>
+          
+        </div>
       </div>
     );
   }

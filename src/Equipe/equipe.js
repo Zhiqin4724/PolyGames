@@ -35,10 +35,10 @@ function Equipe() {
         <div className='equipe-title-container'>
           <motion.div className='equipe-title' variants={variants}
           initial="initial"
-          whileInView={ "animate"}>Notre Equipe</motion.div>
+          whileInView={ "animate"}>Jeux vidéo</motion.div>
           <motion.div className='equipe-title-2' variants={variants}
           initial="initial"
-          whileInView={ "animate"}>Ipsum Lorem</motion.div>
+          whileInView={ "animate"}>Contraintes, créativité, succès</motion.div>
         </div>
         {/* <motion.div className='equipe-cards-container'>
           
