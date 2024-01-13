@@ -36,49 +36,7 @@
     align-items: center;
     z-index: 10;
 }
-.projet-card{
-    padding-top: 2%;
-    display: flex;
-    flex-direction: column;
-    scroll-snap-align: start;
-    z-index: 10;
-    width: 100%;
-}
-.projet-card-border{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 1450px;
-    height: 800px;
-    z-index: 10;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-}
-.projet-card-image{
-    width: 600px;
-    height: 400px;
-    object-fit: cover;
-    z-index: 10;
-}
-.projet-card-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center ;
-    width: 600px;
-    z-index: 10;
-}
-.projet-card-description{
-    color: rgb(0, 0, 0);
-    margin-top: 2%;
 
-    text-align: center;
-    line-height: 1.4;
-    z-index: 10;
-    font-size: 18px;
-}
 .projet-expand-button{
     width: 30px; /* Adjust the width as needed */
   height: 30px; /* Set it equal to the width for a perfect circle */
