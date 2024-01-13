@@ -25,7 +25,7 @@ function App() {
     
     {/* <section id="portfolio"><Portfolio></Portfolio></section> */}
     <section id='projet'><Projet></Projet></section>
-    {/* <section id="Commandite"><Commandite ></Commandite></section> */}
+    <section id="Commandite"><Commandite ></Commandite></section>
     <section id='Commentaire'><Commentaire></Commentaire></section>
     <section id="Contact"><Contact ></Contact></section>
     </div></>

@@ -24,25 +24,21 @@ const variants = {
 }
 
 function Equipe() {
-  const [hasAnimated, setHasAnimated] = useState(false);
+  // const [hasAnimated, setHasAnimated] = useState(false);
 
-  const handleAnimationComplete = () => {
-    setHasAnimated(true);
-  };
+  // const handleAnimationComplete = () => {
+  //   setHasAnimated(true);
+  // };
     return (
 
       <div className="container-equipe">
         <div className='equipe-title-container'>
           <motion.div className='equipe-title' variants={variants}
           initial="initial"
-          animate={hasAnimated ? "animate" : "initial"}
-          whileInView={hasAnimated ? undefined : "animate"}
-          onAnimationComplete={handleAnimationComplete}>Notre Equipe</motion.div>
+          whileInView={ "animate"}>Notre Equipe</motion.div>
           <motion.div className='equipe-title-2' variants={variants}
           initial="initial"
-          animate={hasAnimated ? "animate" : "initial"}
-          whileInView={hasAnimated ? undefined : "animate"}
-          onAnimationComplete={handleAnimationComplete}>Ipsum Lorem</motion.div>
+          whileInView={ "animate"}>Ipsum Lorem</motion.div>
         </div>
         {/* <motion.div className='equipe-cards-container'>
           

@@ -21,11 +21,6 @@ function Commandite() {
     return (
 
       <div className="container-commandite">
-        <motion.div className="commanditaire-title" variants={variants} initial="initial" whileInView="animate">Nos Commanditaires</motion.div>
-        <motion.div className='commanditaire-list' variants={variants} initial="initial" whileInView="animate">
-            <img src={ubisoft} alt='' className='commanditaire-image'></img>
-            <img src={doublestalion} alt='' className='commanditaire-image'></img>
-        </motion.div>
       </div>
     );
   }

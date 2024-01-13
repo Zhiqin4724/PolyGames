@@ -2,7 +2,7 @@ import './commentaire.css';
 import { motion } from 'framer-motion';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import ubisoft from './../logo/ubisoft.png'
+import ubisoft from './../logo/ubisoft (1).png'
 import doublestalion from './../logo/pfNpTEu7_400x400.png'
 const variants = {
   initial: {
@@ -41,8 +41,8 @@ function Commentaire() {
           <motion.div className='commentaire-text' variants={variants}>
           Pour toute question, suggestion ou collaboration, n'hésitez pas à nous contacter. Utilisez le formulaire ci-dessous et nous vous répondrons dès que possible.
           Nous sommes impatients de vous entendre !
-
-          L'équipe de PolyGames
+          <br></br><br></br>
+          L'équipe de PolyGames.
           </motion.div>
           <motion.div className="commanditaire-title" >Nos Commanditaires</motion.div>
           <motion.div className='commanditaire-list' >
