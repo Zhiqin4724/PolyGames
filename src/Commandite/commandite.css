@@ -1,7 +1,8 @@
 .container-commandite{
     height: 400px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #5a6b72;
+    color: rgb(255, 255, 255)
 }
 .commanditaire-image:hover{
     scale: 1.2;

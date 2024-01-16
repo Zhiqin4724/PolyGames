@@ -52,8 +52,8 @@
 .projet-bg-title{
     display: flex;
     justify-content: center;
-    color: #ffffff;
-    font-size: 600px;
+    color: #ffffff8f;
+    font-size: 550px;
     z-index: 1;
     font-weight: bold;
 }
@@ -84,7 +84,7 @@
 .projet-card-1 .projet-card-title{
     margin-top: 70%;
     width: 400px;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 3%;
     color: white;
 }
@@ -125,7 +125,7 @@
 .projet-card-2 .projet-card-title{
     margin-top: 20%;
     width: 400px;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 3%;
     color: white;
 }
@@ -165,7 +165,7 @@
 
 .projet-card-3 .projet-card-title{
     width: 400px;
-    font-size: 14px;
+    font-size: 18px;
     color: white;
     margin-top: 20%;
     margin-left: 2%;
@@ -180,7 +180,7 @@
 }
 .projet-card-3 .projet-card-link{
     width: 400px;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 3%;
     color: beige;
     z-index: 11;
@@ -220,7 +220,7 @@
 }
 .projet-card-4 .projet-card-text{
     width: 300px;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     z-index: 11;
 }
@@ -279,9 +279,9 @@
 }
 .projet-card-5 .projet-card-text{
     margin-top: 10%;
-    width: 500px;
-    font-size: 16px;
-    margin-left: 35%;
+    width: 550px;
+    font-size: 18px;
+    margin-left: 34%;
     color: white;
     z-index: 11;
 }
