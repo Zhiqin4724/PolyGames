@@ -1,8 +1,6 @@
 .container-a-propos{
     width: 100%;
     height: 1050px;
-    /* background: linear-gradient(0deg, rgb(253, 231, 203) 80%, rgb(235, 230, 225)); */
-    /* background-color: rgb(105, 105, 105); */
     background-color: #011018;
     position: relative;
 }
@@ -33,10 +31,6 @@
     width: 800px;
     text-align: left;
     letter-spacing: -2%;
-    /* text-shadow: -1px -1px 0 #00000042,  
-    1px -1px 0 #00000038,
-    -1px 1px 0 #00000028,
-    1px 1px 0 #00000038; */
     z-index: 10;
 }
 .apropros-bg-text{
@@ -53,24 +47,73 @@
     z-index: 1;
 }
 
-.apropros-button{
-    cursor: pointer;
-    position: absolute;
-    background-color: white;
-    width: 150px;
-    height: 50px;
-    border: none;
-    border-radius: 5px;
-    z-index: 3;
-    top: 65%;
-    left: 15%;
-}
-
-.apropros-button:hover{
-   color: white;
-   background-color: #012f47;
-   transition: background-color ease-in-out 0.3s, color ease-in-out 0.3s;
-}
 .apropros-room{
     position: absolute;
+}
+@media only screen and (max-width: 1300px) {
+    #left-title{
+        position: absolute;
+        top:25%;
+        left: 15%;
+        text-align: left;
+    }
+    #sub-title{
+        position: relative;
+        width: 600px;
+        margin-top: 2%;
+        font-size: 40px;
+        font-family: Source Code Pro, monospace;
+        letter-spacing: -1.5px;
+        z-index: 10;
+        color: #ffffff;
+    }
+    #title-a-propros{
+        font-size: 50px;
+        
+    }
+    .apropros-bg-text{
+        position: absolute;
+        top: 55%;
+        font-size: 340px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        opacity: 10%;
+        white-space: nowrap;
+        /* color: rgb(253, 114, 0); */
+        color: white;
+        font-weight: bold;
+        width: 50%;
+        z-index: 1;
+    }
+}
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 480px) {
+    #left-title{
+        top:20%;
+        left: 2%;
+        text-align: center;
+    }
+    #sub-title{
+        width: 440px;
+        margin-top: 10%;
+        font-size: 32px;
+    }
+    #title-a-propros{
+        font-size: 60px;
+        width: 440px;
+        text-align: center;
+    }
+    .apropros-bg-text{
+        position: absolute;
+        top: 55%;
+        font-size: 90px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        opacity: 10%;
+        white-space: nowrap;
+        /* color: rgb(253, 114, 0); */
+        color: white;
+        font-weight: bold;
+        width: 50%;
+        z-index: 1;
+    }
 }

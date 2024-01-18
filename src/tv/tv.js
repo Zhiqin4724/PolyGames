@@ -12,6 +12,7 @@ const TV = () => {
 
 
   useEffect(() => {
+    
     // camera
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
     camera.position.set(400, 300, 300);
@@ -46,7 +47,7 @@ const TV = () => {
 
     // renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(containerRef.current.clientWidth, containerRef.current.clientHeight);
 
     // scene settings
     renderer.shadowMap.enabled = true;
@@ -81,17 +82,18 @@ const TV = () => {
     window.addEventListener('resize', onWindowResize);
 
     function onWindowResize() {
-      camera.left = window.innerWidth / -2;
-      camera.right = window.innerWidth / 2;
-      camera.top = window.innerHeight / 2;
-      camera.bottom = window.innerHeight / -2;
+      const newAspect = containerRef.current.clientWidth / containerRef.current.clientHeight;
+
+      camera.aspect = newAspect;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+
+      renderer.setSize(containerRef.current.clientWidth, containerRef.current.clientHeight);
     }
     
 
     function animate(time) {
-      // controls.update();
+      onWindowResize();
+      controls.update();
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     }

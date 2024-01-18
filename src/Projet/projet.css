@@ -331,3 +331,471 @@
     display: flex;
     flex-direction: row;
 }
+
+@media only screen and (max-width: 1366px) {
+    .projet-bg-title{}
+    .projet-card-1{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 600px;
+        z-index: 10;
+        background: linear-gradient(to top left, #00141e 40%, #012f47 );
+        border-radius: 5px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+        border: 0.1px solid rgba(78, 78, 78, 0.5);
+        position: relative;
+    }
+    .projet-card-1 .projet-card-image{
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        object-fit: fill;
+        border-radius: 10px;
+        z-index: 10;
+        right: 10px;
+    }
+    .projet-card-1 .projet-card-title{
+        margin-top: 70%;
+        width: 400px;
+        font-size: 18px;
+        margin-left: 3%;
+        color: white;
+    }
+    .projet-card-1 .projet-card-text{
+        width: 450px;
+        font-size: 48px;
+        margin-left: 5%;
+        color: white;
+        font-weight: bold;
+        z-index: 11;
+    }
+    .projet-card-2{
+        display: flex;
+        flex-direction: column;
+        width: 1050px;
+        height: 600px;
+        z-index: 10;
+        background: linear-gradient(to top left, #00141e 40%, #012f47 );
+        border-radius: 5px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        margin-left: 1%;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid;
+        border: 0.1px solid rgba(78, 78, 78, 0.5);
+    }
+    .projet-card-2 .projet-card-image{
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        width: 550px;
+        height: 450px;
+        object-fit:cover;
+        z-index: 10;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.555);
+        border-radius: 10px;
+    }
+    .projet-card-2 .projet-card-title{
+        margin-top: 20%;
+        width: 400px;
+        font-size: 18px;
+        margin-left: 3%;
+        color: white;
+    }
+    .projet-card-2 .projet-card-text{
+        width: 450px;
+        margin-left: 5%;
+        font-size: 48px;
+        color: white;
+        font-weight: bold;
+        z-index: 11;
+    
+    }
+    .projet-card-3{
+        display: flex;
+        flex-direction: column;
+        width: 1050px;
+        height: 600px;
+        z-index: 10;
+        background: linear-gradient(to top left, #00141e 40%, #012f47 );
+        border-radius: 5px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+        border: 0.1px solid rgba(78, 78, 78, 0.5);
+    }
+    .projet-card-3 .projet-card-image{
+        position: absolute;
+        width: 600px;
+        height: 500px;
+        object-fit:cover;
+        z-index: 10;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.555);
+        top: 50px;
+        right: 50px;
+        border-radius: 10px;
+    }
+    
+    .projet-card-3 .projet-card-title{
+        width: 400px;
+        font-size: 18px;
+        color: white;
+        margin-top: 20%;
+        margin-left: 2%;
+    }
+    .projet-card-3 .projet-card-text{
+        width: 400px;
+        font-size: 48px;
+        margin-left: 3%;
+        color: white;
+        font-weight: bold;
+        z-index: 11;
+    }
+    .projet-card-3 .projet-card-link{
+        width: 400px;
+        font-size: 18px;
+        margin-left: 3%;
+        color: beige;
+        z-index: 11;
+        margin-top: 3%;
+        font-weight: bold;
+    }
+    .projet-card-4{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 600px;
+        z-index: 10;
+        background: linear-gradient(to top left, #00141e 40%, #012f47 );
+        border-radius: 5px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        margin-left: 1%;
+        position: relative;
+        overflow: hidden;
+        border: 0.1px solid rgba(78, 78, 78, 0.5);
+    }
+    .projet-card-4 .projet-card-image{
+        position: absolute;
+        top: -100px;
+        left: 60px;
+        width: 600px;
+        height: 500px;
+        object-fit:fill;
+        z-index: 10;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.555);
+    }
+    .projet-card-4 .projet-card-title{
+        width: 400px;
+        font-size: 48px;
+        margin-left: 3%;
+        color: white;
+        font-weight: bold;
+    }
+    .projet-card-4 .projet-card-text{
+        width: 300px;
+        font-size: 18px;
+        color: white;
+        z-index: 11;
+    }
+    .projet-card-4 .projet-card-textalign{
+        display: flex;
+        flex-direction: column;
+        margin-top: 72%;
+        margin-left: 5%;
+    }
+    .projet-card-5{
+        display: flex;
+        flex-direction: column;
+        width: 1650px;
+        height: 600px;
+        z-index: 10;
+        background: linear-gradient(to top left, #00141e 40%, #012f47 );
+        border-radius: 5px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        margin-top: 1%;
+        position: relative;
+        overflow: hidden;
+        border: 0.1px solid rgba(78, 78, 78, 0.5);
+        position: relative;
+    }
+    .projet-card-5 .projet-card-image{
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        width: 400px;
+        height: 400px;
+        object-fit:cover;
+        z-index: 10;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.555);
+        border-radius: 10px;
+    }
+    .projet-card-5 .projet-card-image-1{
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        width: 400px;
+        height: 400px;
+        object-fit:fill;
+        z-index: 10;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.555);
+        border-radius: 10px;
+    }
+    
+    .projet-card-5 .projet-card-title{
+        width: 500px;
+        font-size: 48px;
+        color: white;
+        margin-left: 35%;
+        font-weight: bold;
+        z-index: 11;
+        text-align: center;
+    }
+    .projet-card-5 .projet-card-text{
+        margin-top: 10%;
+        width: 550px;
+        font-size: 18px;
+        margin-left: 34%;
+        color: white;
+        z-index: 11;
+    }
+    .projet-card-5 .projet-card-text-1{
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        width: 400px;
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        z-index: 11;
+    }
+    .projet-card-5 .projet-card-text-2{
+        position: absolute;
+        right: 5%;
+        bottom: 15%;
+        width: 400px;
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        z-index: 11;
+    }
+    .projet-card-link-1{
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        color: beige;
+        z-index: 11;
+        font-weight: bold;
+    }
+    .projet-card-link-2{
+        position: absolute;
+        bottom: 10%;
+        right: 23%;
+        color: beige;
+        z-index: 11;
+        font-weight: bold;
+    }
+    
+    .projet-card-line1{
+        display: flex;
+        flex-direction: row;
+    }
+    .projet-card-line2{
+        margin-top: 1%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 480px) {
+    .projet-container{
+        width: 100%;
+        height: 600vh;
+    }
+    .projet-bg-title{
+        font-size: 150px;
+    }
+    .projet-card-1{
+        width: 440px;
+        height: 600px;
+        z-index: 10;
+        margin-left: 0%;
+    }
+    .projet-card-1 .projet-card-image{
+        width: 440px;
+        height: 400px;
+        top: -20px;
+        right: -60px;
+    }
+    .projet-card-1 .projet-card-title{
+        margin-top: 90%;
+        width: 400px;
+        font-size: 18px;
+        margin-left: 6%;
+    }
+    .projet-card-1 .projet-card-text{
+        width: 100px;
+        font-size: 42px;
+        margin-left: 8%;
+    }
+    .projet-card-2{
+        width: 440px;
+        height: 600px;
+        border-radius: 5px;
+        margin-top: 2%;
+    }
+    .projet-card-2 .projet-card-image{
+        width: 440px;
+        height: 400px;
+        top: -20px;
+        right: -60px;
+    }
+    .projet-card-2 .projet-card-title{
+        margin-top: 90%;
+        width: 400px;
+        font-size: 16px;
+        margin-left: 6%;
+    }
+    .projet-card-2 .projet-card-text{
+        width: 400px;
+        margin-left: 8%;
+        font-size: 42px;
+    }
+    .projet-card-3{
+        width: 440px;
+        height: 600px;
+        margin-left: 0%;
+        margin-top: 2%;
+    }
+    .projet-card-3 .projet-card-image{
+        width: 440px;
+        height: 400px;
+        top: -20px;
+        right: -60px;
+    }
+    
+    .projet-card-3 .projet-card-title{
+        width: 400px;
+        font-size: 16px;
+        margin-top: 90%;
+        margin-left: 6%;
+    }
+    .projet-card-3 .projet-card-text{
+        width: 400px;
+        font-size: 42px;
+        margin-left: 8%;
+    }
+    .projet-card-3 .projet-card-link{
+        width: 400px;
+        font-size: 16px;
+        margin-left: 8%;
+    }
+    .projet-card-4{
+        width: 440px;
+        height: 600px;
+        z-index: 10;
+        margin-top: 2%;
+        margin-left: 0%;
+    }
+    .projet-card-4 .projet-card-image{
+        top: -100px;
+        left: 60px;
+        width: 600px;
+        height: 500px;
+    }
+    .projet-card-4 .projet-card-title{
+        width: 400px;
+        font-size: 42px;
+        margin-left: 3%;
+    }
+    .projet-card-4 .projet-card-text{
+        width: 300px;
+        font-size: 16px;
+    }
+    .projet-card-4 .projet-card-textalign{
+        margin-top: 93%;
+        margin-left: 5%;
+    }
+    .projet-card-5{
+        width: 440px;
+        height: 1400px;
+        z-index: 10;
+        margin-top: 2%;
+    }
+    .projet-card-5 .projet-card-image{
+        left: 5%;
+        top: 18%;
+    }
+    .projet-card-5 .projet-card-image-1{
+        right: 5%;
+        top: 60%;
+        width: 400px;
+        height: 400px;
+    }
+    
+    .projet-card-5 .projet-card-title{
+        width: 440px;
+        font-size: 42px;
+        margin-left: 0%;
+        color: white;
+        font-weight: bold;
+        z-index: 11;
+        text-align: center;
+    }
+    .projet-card-5 .projet-card-text{
+        width: 440px;
+        font-size: 16px;
+        margin-left: 0%;
+        text-align: center;
+
+    }
+    .projet-card-5 .projet-card-text-1{
+        position: absolute;
+        top: 48%;
+        left: 5%;
+        width: 400px;
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        z-index: 11;
+    }
+    .projet-card-5 .projet-card-text-2{
+        position: absolute;
+        left: 5%;
+        bottom: 7%;
+        width: 400px;
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        z-index: 11;
+    }
+    .projet-card-link-1{
+        position: absolute;
+        top: 52%;
+        left: 5%;
+        color: beige;
+        z-index: 11;
+        font-weight: bold;
+    }
+    .projet-card-link-2{
+        position: absolute;
+        bottom: 4%;
+        left: 5%;
+        color: beige;
+        z-index: 11;
+        font-weight: bold;
+    }
+    
+    .projet-card-line1{
+        display: flex;
+        flex-direction: column;
+    }
+    .projet-card-line2{
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+    }
+}

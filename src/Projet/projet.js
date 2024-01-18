@@ -22,9 +22,6 @@ function Projet() {
       <div className='projet-padding'></div>
       <motion.div className='projet-bg-title' style={{ y: parallaxY }}>Projet</motion.div>
       <div className='projet-card-container'>
-      {/* {items.map((item, index) =>
-        <Single item={item} key={items.id} index={index} scrollIntoView={scrollIntoView} />
-      )} */}
       <div className='projet-card-line1'>
         <div className='projet-card-1'>
         <div className='projet-card-title'>Découvrez les secrets du développement de jeux.</div>
