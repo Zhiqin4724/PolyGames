@@ -51,6 +51,10 @@ function NavBar() {
             setScrolling(window.scrollY > scrollTop);
     
             // If the sidebar is open, don't apply scrolling animations
+            // If the sidebar is open or if it's in mobile view, don't apply scrolling animations
+            if (open || window.innerWidth <= 768) {
+                return;
+            }
             if (open) {
                 return;
             }
@@ -70,6 +74,8 @@ function NavBar() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [scrollTop, controls, open]);
+
+    const isMobile = window.innerWidth <= 767;
     return (
             <motion.div  className={`container-navbar ${scrolling ? 'hidden' : ''}`}
             initial={{ y: 0 }}
@@ -92,20 +98,22 @@ function NavBar() {
                         </motion.div>
                         <img src={logo} alt="logo-poly" className='navbar-polygames-logo'></img>
                     </div>
-                    <div className='content'>
-                        <div className='info'>
-                            Valeur
+                    {!isMobile && (
+                        <div className='content'>
+                            <div className='info'>
+                                Valeur
+                            </div>
+                            <div className='info'>
+                                Projet
+                            </div>
+                            <div className='info'>
+                                Commentaire
+                            </div>
+                            <div className='info'>
+                                Contact
+                            </div>
                         </div>
-                        <div className='info'>
-                            Projet
-                        </div>
-                        <div className='info'>
-                            Commentaire
-                        </div>
-                        <div className='info'>
-                            Contact
-                        </div>
-                    </div>
+                    )}
                 </div>
             </motion.div>
     );

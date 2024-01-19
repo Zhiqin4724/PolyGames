@@ -2,9 +2,57 @@
     height: 400px;
     width: 100%;
     background-color: #5a6b72;
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }
 .commanditaire-image:hover{
     scale: 1.2;
     transition: scale ease-in-out 0.5s;
+}
+.commandite-title-1{
+    font-family: Source Code Pro, monospace;
+    font-size: 40px;
+
+}
+.commandite-title-2{
+    font-family: Source Code Pro, monospace;
+    font-size: 40px;
+    margin-top: 5%;
+}
+.commandite-title-3{
+    font-family: Source Code Pro, monospace;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 1300px) {
+    
+}
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 480px) {
+    .container-commandite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        height: 250px;
+    }
+    .commandite-title-1{
+        font-size: 20px;
+        padding-top: 10%;
+        width: 120px;
+    }
+    .commandite-title-2{
+        font-size: 20px;
+        padding-top: 20% ;
+        width: 120px;
+    }
+    .commandite-title-3{
+        font-size: 20px;
+        padding-top: 30%;
+        width: 120px;
+    }
 }

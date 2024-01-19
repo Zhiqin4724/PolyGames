@@ -11,13 +11,12 @@ function Contact() {
 
       <div className="container-contact">
         <div className="contact-title-container">
-        <br className="line-contact"></br>
         <div id="title-contact">contact</div>
         </div>
         <div className="logo-container">
-            <div class="logo-contact">
+            <div class="logo-contact polytechnique">
               <a href='https://www.polymtl.ca/'>
-                <img src={polytechnique} alt="polytechnique"></img>
+                <img src={polytechnique} alt="polytechnique" className='logo-polytechnique'></img>
                 </a>
             </div>
             <div class="logo-contact">
@@ -26,7 +25,7 @@ function Contact() {
                 <a href='https://www.instagram.com/_poly.games_/' className='contact-link'>  <img src={instagram} alt="instagram" className="logo"></img></a>
               <a href='https://discord.gg/gcNtVySk' className='contact-link'>  <img src={discord} alt='discord' className='logo'></img></a>
             </div>
-            <div class="logo-contact">
+            <div class="logo-contact polygames">
                 <img src={polygames} alt="polygames" id="logo-poly"></img>
             </div>
         </div>

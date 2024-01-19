@@ -78,3 +78,38 @@
     margin-left: 5%;
     margin-right: 5%;
 }
+
+@media only screen and (max-width: 1300px) {
+    
+}
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 480px) {
+    .contact-copyrights{
+        margin-top: 5%;
+    }
+    .logo-container{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .logo-contact{
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        order: 1;
+        margin-top: 3%;
+    }
+
+    .logo-contact.polygames {
+        order: -1; /* Place PolyGames at the top */
+      }
+    
+      .logo-contact.polytechnique {
+        order: 0; /* Place Polytechnique at the bottom */
+
+      }
+      .logo-polytechnique{
+        width: 80%;
+      }
+}

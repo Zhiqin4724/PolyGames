@@ -22,7 +22,7 @@
 }
 .valeur-card{
     width: 400px;
-    height: 500px;
+    height: 550px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -38,7 +38,7 @@
     color: white;
 }
 .valeur-card-title-container{
-    height: 120px;
+    height: 150px;
     justify-content: center;
 }
 
@@ -115,5 +115,8 @@
     .valeur-card-title {
         font-size: 30px;
         width: 70%;
+    }
+    .valeur-list-container .valeur-card:first-child .valeur-image{
+        margin-left: 7%;
     }
 }

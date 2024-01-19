@@ -613,13 +613,13 @@
 @media only screen and (max-width: 480px) {
     .projet-container{
         width: 100%;
-        height: 600vh;
+        height: 4100px;
     }
     .projet-bg-title{
-        font-size: 150px;
+        font-size: 130px;
     }
     .projet-card-1{
-        width: 440px;
+        width: 380px;
         height: 600px;
         z-index: 10;
         margin-left: 0%;
@@ -631,8 +631,8 @@
         right: -60px;
     }
     .projet-card-1 .projet-card-title{
-        margin-top: 90%;
-        width: 400px;
+        margin-top: 105%;
+        width: 350px;
         font-size: 18px;
         margin-left: 6%;
     }
@@ -642,10 +642,11 @@
         margin-left: 8%;
     }
     .projet-card-2{
-        width: 440px;
+        width: 380px;
         height: 600px;
         border-radius: 5px;
         margin-top: 2%;
+        margin-left: 0%;
     }
     .projet-card-2 .projet-card-image{
         width: 440px;
@@ -654,18 +655,18 @@
         right: -60px;
     }
     .projet-card-2 .projet-card-title{
-        margin-top: 90%;
+        margin-top: 105%;
         width: 400px;
         font-size: 16px;
         margin-left: 6%;
     }
     .projet-card-2 .projet-card-text{
-        width: 400px;
+        width: 350px;
         margin-left: 8%;
         font-size: 42px;
     }
     .projet-card-3{
-        width: 440px;
+        width: 380px;
         height: 600px;
         margin-left: 0%;
         margin-top: 2%;
@@ -678,23 +679,23 @@
     }
     
     .projet-card-3 .projet-card-title{
-        width: 400px;
+        width: 350px;
         font-size: 16px;
-        margin-top: 90%;
+        margin-top: 105%;
         margin-left: 6%;
     }
     .projet-card-3 .projet-card-text{
-        width: 400px;
+        width: 350px;
         font-size: 42px;
         margin-left: 8%;
     }
     .projet-card-3 .projet-card-link{
-        width: 400px;
+        width: 350px;
         font-size: 16px;
         margin-left: 8%;
     }
     .projet-card-4{
-        width: 440px;
+        width: 380px;
         height: 600px;
         z-index: 10;
         margin-top: 2%;
@@ -707,7 +708,7 @@
         height: 500px;
     }
     .projet-card-4 .projet-card-title{
-        width: 400px;
+        width: 350px;
         font-size: 42px;
         margin-left: 3%;
     }
@@ -716,21 +717,24 @@
         font-size: 16px;
     }
     .projet-card-4 .projet-card-textalign{
-        margin-top: 93%;
+        margin-top: 110%;
         margin-left: 5%;
     }
     .projet-card-5{
-        width: 440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 380px;
         height: 1400px;
         z-index: 10;
         margin-top: 2%;
     }
     .projet-card-5 .projet-card-image{
-        left: 5%;
+        left: 2.5%;
         top: 18%;
     }
     .projet-card-5 .projet-card-image-1{
-        right: 5%;
+        left: 2.5%;
         top: 60%;
         width: 400px;
         height: 400px;
@@ -746,7 +750,7 @@
         text-align: center;
     }
     .projet-card-5 .projet-card-text{
-        width: 440px;
+        width: 400px;
         font-size: 16px;
         margin-left: 0%;
         text-align: center;
@@ -792,10 +796,12 @@
     .projet-card-line1{
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     .projet-card-line2{
         margin-top: 1%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 }

@@ -2,6 +2,10 @@ html{
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 .App {
   text-align: center;
 }
@@ -38,5 +42,11 @@ html{
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media (max-width: 767px) {
+  html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 }
