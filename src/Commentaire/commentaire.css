@@ -108,7 +108,7 @@ a .commanditaire-image-doublestalion{
     transition: scale ease-in-out 0.5s;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 550px) {
     .container-commentaire{
         display: flex;
         flex-direction: column;

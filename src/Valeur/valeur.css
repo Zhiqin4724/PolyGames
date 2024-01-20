@@ -88,7 +88,7 @@
 }
 
 /* Media query for mobile phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
     .valeur-container{
         height: 2000px;
     }

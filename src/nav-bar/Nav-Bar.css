@@ -123,11 +123,8 @@
     left: 300px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 550px) {
     .content {
         display: none;
-    }
-    .container-navbar{
-        width: 430px;
     }
 }
