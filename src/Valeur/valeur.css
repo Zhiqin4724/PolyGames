@@ -54,47 +54,89 @@
 .valeur-image{
     width: 200px;
 }
-
-/* Media query for tablets */
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1460px) {
     .valeur-container{
         background-color: #011018;
-        height: 1000px;
+        height: 1200px;
     }
-
-    .valeur-title {
+    .valeur-title{
+        font-size: 60px;
+    }
+    .valeur-card-title {
         padding-left: 5%;
-        font-size: 40px;
+        font-size: 48px;
+        width: 300px;
     }
 
     .valeur-list-container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         margin-left: 5%;
         margin-right: 5%;
     }
 
     .valeur-card {
-        width: 80%;
+        width: 100%;
         margin-bottom: 20px;
+        height: 800px;
     }
 
     .valeur-description {
-        width: 100%;
+        width: 90%;
+        font-size: 25px;
+        height: 300px;
+        margin-top: 10%;
+        text-align: center;
     }
     .valeur-card-title-container{
         height: 150px;
     }
 }
-
-/* Media query for mobile phones */
-@media only screen and (max-width: 550px) {
+/* Media query for tablets */
+@media only screen and (max-width: 1200px) {
     .valeur-container{
-        height: 2000px;
+        background-color: #011018;
+        height: 1200px;
+    }
+    .valeur-title{
+        font-size: 60px;
+    }
+    .valeur-card-title {
+        padding-left: 5%;
+        font-size: 48px;
+        width: 300px;
+    }
+
+    .valeur-list-container {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .valeur-card {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 800px;
+    }
+
+    .valeur-description {
+        width: 90%;
+        font-size: 23px;
+        height: 300px;
+        margin-top: 20%;
+    }
+    .valeur-card-title-container{
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .valeur-container{
+        height: 3000px;
     }
     .valeur-title {
         padding-top: 5%;
-        font-size: 30px;
+        font-size: 50px;
         display: flex;
         justify-content: center;
         margin-left: auto;
@@ -102,8 +144,10 @@
     }
     .valeur-description{
         margin-top: 0%;
+        font-size: 28px;
     }
     .valeur-list-container {
+        flex-direction: column;
         margin-left: 3%;
         margin-right: 3%;
     }
@@ -113,10 +157,56 @@
     }
 
     .valeur-card-title {
-        font-size: 30px;
+        font-size: 42px;
         width: 70%;
     }
     .valeur-list-container .valeur-card:first-child .valeur-image{
         margin-left: 7%;
+    }
+    .valeur-image{
+        width: 300px;
+    }
+}
+/* Media query for mobile phones */
+@media only screen and (max-width: 550px) {
+    .valeur-container{
+        height: 2500px;
+    }
+    .valeur-title {
+        padding-top: 5%;
+        font-size: 46px;
+    }
+    .valeur-description{
+        margin-top: 10%;
+        font-size: 24px;
+        text-align: center;
+    }
+    .valeur-card {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 700px;
+    }
+    .valeur-card-title {
+        font-size: 38px;
+        width: 80%;
+    }
+    .valeur-image{
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .valeur-title {
+        padding-top: 5%;
+        font-size: 40px;
+    }
+    .valeur-description{
+        margin-top: 10%;
+        font-size: 22px;
+    }
+
+    .valeur-card-title {
+        font-size: 38px;
+        width: 80%;
     }
 }
