@@ -107,6 +107,70 @@ a .commanditaire-image-doublestalion{
     scale: 1.2;
     transition: scale ease-in-out 0.5s;
 }
+@media only screen and (max-width: 1460px) {
+    .logo-contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-copyrights{
+        margin-top: 5%;
+    }
+    .logo-contact.polytechnique {
+        margin-left: 5%;
+
+      }
+}
+@media only screen and (max-width: 1200px) {
+    .commentaire-text-container{
+        width: 300px;
+    }
+    .commentaire-nom{
+        width: 450px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    .commentaire-email{
+        width: 450px;
+        height: 40px;
+        margin-top: 5%;
+        border-radius: 5px;
+    }
+    .commentaire-form-text{
+        height: 400px;
+        width: 450px;
+        margin-top: 5%;
+        border-radius: 5px;
+    }
+    .commanditaire-container{
+        margin-top: 5%;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .commentaire-text-container{
+        width: 500px;
+    }
+    .commentaire-nom{
+        width: 330px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    .commentaire-email{
+        width: 330px;
+        height: 40px;
+        margin-top: 5%;
+        border-radius: 5px;
+    }
+    .commentaire-form-text{
+        height: 400px;
+        width: 330px;
+        margin-top: 5%;
+        border-radius: 5px;
+    }
+    .commentaire-text{
+        width: 300px;
+    }
+}
 
 @media (max-width: 550px) {
     .container-commentaire{
@@ -117,6 +181,17 @@ a .commanditaire-image-doublestalion{
     .commentaire-section{
         display: flex;
         flex-direction: column;
+    }
+    .commentaire-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .commentaire-title{
+        font-size: 48px;
     }
     .commentaire-form-container{
         display: flex;
@@ -149,4 +224,21 @@ a .commanditaire-image-doublestalion{
         height: 100px;
         margin-left: 10%;
     }
+    .commentaire-text{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .logo-contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-copyrights{
+        margin-top: 5%;
+    }
+    .logo-contact.polytechnique {
+        margin-left: 5%;
+
+      }
 }

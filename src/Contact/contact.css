@@ -78,9 +78,19 @@
     margin-left: 5%;
     margin-right: 5%;
 }
+@media only screen and (max-width: 1460px) {
+    .logo-contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-copyrights{
+        margin-top: 5%;
+    }
+    .logo-contact.polytechnique {
+        margin-left: 5%;
 
-@media only screen and (max-width: 1300px) {
-    
+      }
 }
 
 /* Media query for mobile phones */
@@ -112,4 +122,28 @@
       .logo-polytechnique{
         width: 80%;
       }
+}
+@media only screen and (max-width: 375px) {
+    .container-commandite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        height: 250px;
+    }
+    .commandite-title-1{
+        font-size: 18px;
+        padding-top: 10%;
+        width: 100px;
+    }
+    .commandite-title-2{
+        font-size: 18px;
+        padding-top: 20% ;
+        width: 100px;
+    }
+    .commandite-title-3{
+        font-size: 18px;
+        padding-top: 30%;
+        width: 100px;
+    }
 }

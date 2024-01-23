@@ -13,6 +13,7 @@ const TV = () => {
 
   useEffect(() => {
     
+    
     // camera
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
     camera.position.set(400, 300, 300);
@@ -82,12 +83,30 @@ const TV = () => {
     window.addEventListener('resize', onWindowResize);
 
     function onWindowResize() {
-      const newAspect = containerRef.current.clientWidth / containerRef.current.clientHeight;
+      const screenWidth = window.innerWidth;
 
-      camera.aspect = newAspect;
-      camera.updateProjectionMatrix();
+    let newWidth, newHeight;
 
-      renderer.setSize(containerRef.current.clientWidth, containerRef.current.clientHeight);
+    // Set different canvas sizes based on screen width
+    if (screenWidth < 600) { // Mobile
+      newWidth = 400;
+      newHeight = 300;
+    }else if (screenWidth < 820) { // Tablet
+      newWidth = 800;
+      newHeight = 600;
+    } 
+    else if (screenWidth < 1200) { // Tablet
+      newWidth = 1000;
+      newHeight = 800;
+    } else { // Desktop
+      newWidth = 1200;
+      newHeight = 1000;
+    }
+
+    camera.aspect = newWidth / newHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(newWidth, newHeight);
     }
     
 
@@ -99,7 +118,7 @@ const TV = () => {
     }
 
     animate();
-
+    window.addEventListener('resize', onWindowResize);
     // Create a container element
     container.current = containerRef.current;
     if (container.current) {

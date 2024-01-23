@@ -1,6 +1,6 @@
 import './Nav-Bar.css';
 import logo from './../logo/pg_logo_manette.png';
-import hamburger from './../logo/hamburger.png'
+import hamburger from './../logo/menu (3).png'
 import { motion, useAnimation } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
@@ -11,7 +11,7 @@ function NavBar() {
     const navbarBgControls = useAnimation();
     const variants = {
         open: {
-            clipPath: " circle(1200px at 50px 50px)",
+            clipPath: " circle(1400px at 50px 50px)",
             transition: {
                 type: "spring",
                 stiffness: 100,
@@ -101,16 +101,16 @@ function NavBar() {
                     {!isMobile && (
                         <div className='content'>
                             <div className='info'>
-                                Valeur
+                                <a href="#Valeur" >Valeur</a>
                             </div>
                             <div className='info'>
-                                Projet
+                                <a href="#Projet" >Projet</a>
                             </div>
                             <div className='info'>
-                                Commentaire
+                                <a href="#Commentaire" >Commentaire</a>
                             </div>
                             <div className='info'>
-                                Contact
+                                <a href="#Contact" >Contact</a>
                             </div>
                         </div>
                     )}

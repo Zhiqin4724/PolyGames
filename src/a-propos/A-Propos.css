@@ -50,7 +50,7 @@
 .apropros-room{
     position: absolute;
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1460px) {
     #left-title{
         position: absolute;
         top:25%;
@@ -84,8 +84,69 @@
         width: 50%;
         z-index: 1;
     }
-}
 
+}
+@media only screen and (max-width: 1200px) {
+    #left-title{
+        position: absolute;
+        top:25%;
+        left: 15%;
+        text-align: left;
+    }
+    #sub-title{
+        position: relative;
+        width: 600px;
+        margin-top: 2%;
+        font-size: 40px;
+        font-family: Source Code Pro, monospace;
+        letter-spacing: -1.5px;
+        z-index: 10;
+        color: #ffffff;
+    }
+    #title-a-propros{
+        font-size: 50px;
+        
+    }
+    .apropros-bg-text{
+        position: absolute;
+        top: 55%;
+        font-size: 170px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        opacity: 10%;
+        white-space: nowrap;
+        /* color: rgb(253, 114, 0); */
+        color: white;
+        font-weight: bold;
+        width: 50%;
+        z-index: 1;
+    }
+}
+@media only screen and (max-width: 820px) {
+    #left-title{
+        position: absolute;
+        top:25%;
+        left: 10%;
+        text-align: left;
+    }
+    #sub-title{
+        position: relative;
+        width: 600px;
+        margin-top: 2%;
+        font-size: 40px;
+        font-family: Source Code Pro, monospace;
+        letter-spacing: -1.5px;
+        z-index: 10;
+        color: #ffffff;
+    }
+    #title-a-propros{
+        font-size: 50px;
+        
+    }
+    .apropros-bg-text{
+        font-size: 140px;
+    }
+
+}
 /* Media query for mobile phones */
 @media only screen and (max-width: 550px) {
     #left-title{
@@ -120,4 +181,15 @@
         width: 50%;
         z-index: 1;
     }
+}
+@media only screen and (max-width: 375px) {
+    .tv-canvas-container{
+        position: absolute;
+        padding-left: 0px;
+        padding-top: 500px;
+        z-index: 5;
+        width: 400px;
+        height: 50px;
+    }
+
 }

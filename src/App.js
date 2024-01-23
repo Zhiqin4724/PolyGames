@@ -20,11 +20,11 @@ function App() {
     <section id='Homepage'><NavBar ></NavBar></section>
     {/* <Loading></Loading> */}
     <section id="APropros"><Apropos ></Apropos></section>
-    <section id="valeur"><Valeur></Valeur></section>
+    <section id="Valeur"><Valeur></Valeur></section>
     <section id="Equipe"><Equipe ></Equipe></section>
     
     {/* <section id="portfolio"><Portfolio></Portfolio></section> */}
-    <section id='projet'><Projet></Projet></section>
+    <section id='Projet'><Projet></Projet></section>
     <section id="Commandite"><Commandite ></Commandite></section>
     <section id='Commentaire'><Commentaire></Commentaire></section>
     <section id="Contact"><Contact ></Contact></section>
