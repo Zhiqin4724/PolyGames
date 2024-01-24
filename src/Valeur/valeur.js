@@ -60,7 +60,7 @@ function Valeur() {
               <div className='valeur-image-container'>
                 <img src={collaboration} alt='' className='valeur-image'></img>
               </div>
-              <div className='valeur-card-title'>Créativite et Compétition</div>
+              <div className='valeur-card-title'>Créativité et Compétition</div>
               <div className='valeur-description'>Plongez dans l'univers où la créativité rencontre la compétition. On vous invite à explorer les dimensions innovantes du jeu, stimulant votre créativité tout en vous préparant à exceller dans un environnement compétitif. </div>
             </div>
           </motion.div>

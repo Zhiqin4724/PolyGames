@@ -49,6 +49,13 @@
 .apropros-room{
     position: absolute;
 }
+.apropros-HideCanvas{
+    bottom: 0;
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    z-index: 20;
+}
 @media only screen and (max-width: 1460px) {
     #left-title{
         position: absolute;

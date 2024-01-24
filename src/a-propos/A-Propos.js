@@ -65,6 +65,7 @@ function Apropos() {
         <motion.div className='apropros-bg-text' variants={textslide2} initial="initial" animate="animate">
           Game Club Creation
         </motion.div>
+        <div className='apropros-HideCanvas'></div>
       </div>
     );
   }
