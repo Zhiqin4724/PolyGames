@@ -1,10 +1,9 @@
 import './equipe.css';
-import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 const variants = {
   initial: {
-    y: 500,
+    y: 300,
     opacity: 0,
   },
   animate:{
@@ -18,19 +17,6 @@ const variants = {
 };
 
 function Equipe() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 767);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
   return (
     <div className="container-equipe">
       <div className='equipe-title-container'>

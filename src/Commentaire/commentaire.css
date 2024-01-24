@@ -78,8 +78,6 @@
     width: 100px;
     border-radius: 5px;
     cursor: pointer;
-
-    /* object-fit: cover; */
 }
 .commanditaire-image:hover{
     scale: 1.2;
@@ -227,6 +225,22 @@ a .commanditaire-image-doublestalion{
     .commentaire-text{
         text-align: center;
     }
+    .commanditaire-image{
+        height: 80px;
+        width: 80px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    a .commanditaire-image-doublestalion{
+        height: 80px;
+        width: 80px;
+        border-radius: 5px;
+        margin-left: 30%;
+        cursor: pointer;
+    }
+    .commanditaire-list{
+         margin-top: 10%;
+    }
 }
 @media only screen and (max-width: 375px) {
     .logo-contact{
@@ -239,6 +253,5 @@ a .commanditaire-image-doublestalion{
     }
     .logo-contact.polytechnique {
         margin-left: 5%;
-
       }
 }

@@ -1,8 +1,5 @@
 import './commandite.css';
-import ubisoft from './../logo/ubisoft.png';
-import doublestalion from './../logo/pfNpTEu7_400x400.png';
 import { motion } from 'framer-motion';
-import React, { useEffect, useState } from 'react';
 
 const variants = {
   initial: {
@@ -20,20 +17,6 @@ const variants = {
 };
 
 function Commandite() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 767);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   return (
     <div className="container-commandite">
       <div className='equipe-title-container'>

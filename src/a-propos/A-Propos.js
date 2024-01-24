@@ -1,7 +1,6 @@
 import './A-Propos.css';
 import {motion} from 'framer-motion'
 import TV from '../tv/tv';
-import Loading from '../loading/loading';
 
 const textvariants = {
   initial: {
@@ -47,7 +46,6 @@ const textslide2 = {
   }
 }
 function Apropos() {
-  const isMobile = window.innerWidth <= 1536;
 
   return (
       

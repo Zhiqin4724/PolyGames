@@ -7,7 +7,6 @@ import Projet from './Projet/projet.js';
 import Commentaire from './Commentaire/commentaire.js';
 import Valeur from './Valeur/valeur.js';
 import Equipe from './Equipe/equipe.js';
-import Loading from './loading/loading.js';
 // import { Application } from '@splinetool/runtime';
 
 
@@ -15,10 +14,11 @@ import Loading from './loading/loading.js';
 function App() {
   return (
     <>
+    {/* <Loading></Loading> */}
     <div className="container">
     
     <section id='Homepage'><NavBar ></NavBar></section>
-    {/* <Loading></Loading> */}
+  
     <section id="APropros"><Apropos ></Apropos></section>
     <section id="Valeur"><Valeur></Valeur></section>
     <section id="Equipe"><Equipe ></Equipe></section>
