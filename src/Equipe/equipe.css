@@ -76,7 +76,7 @@
 }
 /* Media query for mobile phones */
 @media only screen and (max-width: 550px) {
-    .container-commandite{
+    .container-equipe{
         display: flex;
         justify-content: center;
         align-items: center;

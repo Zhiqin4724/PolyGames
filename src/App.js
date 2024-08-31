@@ -7,6 +7,7 @@ import Projet from './Projet/projet.js';
 import Commentaire from './Commentaire/commentaire.js';
 import Valeur from './Valeur/valeur.js';
 import Equipe from './Equipe/equipe.js';
+import GameJams from './GameJam/game_jam.js';
 // import { Application } from '@splinetool/runtime';
 
 
@@ -17,10 +18,11 @@ function App() {
     {/* <Loading></Loading> */}
     <div className="container">
     
-    <section id='Homepage'><NavBar ></NavBar></section>
+    <section id='Homepage'><NavBar></NavBar></section>
   
     <section id="APropros"><Apropos ></Apropos></section>
     <section id="Valeur"><Valeur></Valeur></section>
+    <section id="GameJams"><GameJams></GameJams></section>
     <section id="Equipe"><Equipe ></Equipe></section>
     
     {/* <section id="portfolio"><Portfolio></Portfolio></section> */}

@@ -52,10 +52,10 @@ function Apropos() {
       <div className="container-a-propos">
         <motion.div id="left-title" variants={textvariants} initial="initial" animate="animate">
         <motion.div id="title-a-propros" variants={textvariants}>
-        Bienvenue sur PolyGames
+        Bienvenue sur Poly Games
         </motion.div>
         <motion.div id="sub-title" variants={textvariants}>
-        Libérez votre développeur de jeux intérieur, apprenez, créez, partagez !
+        Libérez votre développeur de jeux intérieur, apprenez, créez, partagez!
         </motion.div>
         </motion.div>
         {<TV></TV>}
@@ -65,6 +65,9 @@ function Apropos() {
         <motion.div className='apropros-bg-text' variants={textslide2} initial="initial" animate="animate">
           Game Club Creation
         </motion.div>
+        <a href="#GameJams" >
+          <button className='button-game_jam'>Game Jams</button>
+        </a>
         <div className='apropros-HideCanvas'></div>
       </div>
     );
