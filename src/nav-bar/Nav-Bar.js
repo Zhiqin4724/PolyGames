@@ -28,7 +28,7 @@ function NavBar() {
             }
         }
     }
-    const linksItem = ["Homepage", "Valeur", "Projet", "Commandite", "Contact"]
+    const linksItem = ["Homepage", "Valeur", "Projet", "Commandite", "Contact", "GameJams"]
     
     useEffect(() => {
         // Trigger the initial animation based on the initial state
@@ -84,7 +84,7 @@ function NavBar() {
                     <div className="navbar-logo-container">
                         <motion.div className='sidebar' animate={open ? "open" : "closed"}>
                             <motion.div className='navbar-bg' variants={variants} initial={false} animate={navbarBgControls}>
-                                <div className='navbar-links'>
+                                <div className='navbar-links' onClick={handleToggle}>
                                     {linksItem.map((item) => (
                                         <a href={`#${item}`} key={item}>
                                         {item}
@@ -104,6 +104,9 @@ function NavBar() {
                                 <a href="#Valeur" >Valeur</a>
                             </div>
                             <div className='info'>
+                                <a href="#GameJam" >GameJams</a>
+                            </div>
+                            <div className='info'>
                                 <a href="#Projet" >Projet</a>
                             </div>
                             <div className='info'>
@@ -112,6 +115,7 @@ function NavBar() {
                             <div className='info'>
                                 <a href="#Contact" >Contact</a>
                             </div>
+
                         </div>
                     )}
                 </div>

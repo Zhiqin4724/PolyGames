@@ -41,7 +41,7 @@ function Commentaire() {
     emailjs
       .sendForm('service_qiuxspc', 'template_dw8yh5v', formRef.current, 'KkghyDwreAbkKxkXl')
       .then((result) => {
-        console.log(result);
+        console.log(formRef.current);
       }, (error) => {
         console.log(error);
       });
