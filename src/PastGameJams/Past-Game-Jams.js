@@ -16,7 +16,6 @@ const gameJamData = [
       title: 'Édition Janvier 2025',
       theme: 'Thème: À venir',
     },
-    // Add more cards here as needed
   ];
   
 
