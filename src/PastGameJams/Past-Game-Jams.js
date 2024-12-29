@@ -1,6 +1,8 @@
 import './Past-Game-Jams.css';
 import { motion } from 'framer-motion';
 import gameJam from'./../logo/game_jam.jpg'; 
+import gameJam25 from'./../logo/CreativeJam_Affiche_25e.png'; 
+import gris from'./../logo/gris.png'; 
 
 
 const gameJamData = [
@@ -12,10 +14,16 @@ const gameJamData = [
     },
     {
       id: 2,
-      image: 'path/to/image2.jpg',
+      image: gameJam25,
       title: 'Édition Janvier 2025',
       theme: 'Thème: À venir',
     },
+    {
+        id: 3,
+        image: gris,
+        title: 'Édition À venir',
+        theme: 'Thème: À venir',
+      },
   ];
   
 
