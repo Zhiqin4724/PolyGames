@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+.container-past_game_jam{
+    width: 100%;
+    height: 1000px;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+
+}
+.past_game_jam_title{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    color: black;
+    font-size: 96px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.past_game_jam_card_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 65%;
+    justify-content: center;
+}
+
+.past_game_jam_card{
+    width: 30%;
+    background-color: #8D93FF;
+    height: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+.past_game_jam_card:hover{
+    background-color: #000000;
+    color: white;
+}
+.past_game_jam_card:hover {
+    background-color: #000000;
+}
+
+.past_game_jam_card:hover .past_game_jam_card_moment_container {
+    color: white;
+    border: white solid 1px;
+}
+
+.past_game_jam_card:hover .past_game_jam_card_Theme {
+    color: white;
+}
+.past_game_jam_card_image_container{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.past_game_jam_card_image{
+    margin-top: 5%;
+    width: 95%;
+    height: 100%;
+    border-radius: 5px;
+}
+.past_game_jam_card_moment_container{
+    margin-top: 5%;
+    width: 35%;
+    height: 8%;
+    margin-left: 5%;
+    border-radius: 50px;
+    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+.past_game_jam_card_Theme{
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container-past_game_jam{
+        height: 700px;
+        background-color: #ffffff;
+        color: rgb(255, 255, 255);;
+    }
+
+    .past_game_jam_title{
+        color: black;
+        font-size: 60px;
+    }
+    .past_game_jam_card_Theme{
+        font-size: 16px;
+    }
+    .past_game_jam_card_moment{
+        font-size: 7px;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .container-past_game_jam{
+        height: 500px;
+        background-color: #ffffff;
+        color: rgb(255, 255, 255);;
+    }
+
+    .past_game_jam_title{
+        color: black;
+        font-size: 60px;
+    }
+    .past_game_jam_card_Theme{
+        font-size: 16px;
+    }
+    .past_game_jam_card_moment{
+        font-size: 6px;
+    }
+    
+}
+/* Media query for mobile phones */
+@media only screen and (max-width: 550px) {
+    .container-past_game_jam{
+        width: 100%;
+        height: 220px;
+        background-color: #5a6b72;
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}

@@ -103,6 +103,9 @@ function NavBar() {
                             <div className='info'>
                                 <a href="#Valeur" >Valeur</a>
                             </div>
+                            {/* <div className='info'>
+                                <a href="#GameJam" >GameJams</a>
+                            </div> */}
                             <div className='info'>
                                 <a href="#GameJam" >GameJams</a>
                             </div>
