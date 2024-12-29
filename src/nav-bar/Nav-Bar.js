@@ -1,79 +1,84 @@
-import './Nav-Bar.css';
-import logo from './../logo/pg_logo_manette.png';
-import hamburger from './../logo/menu (3).png'
-import { motion, useAnimation } from 'framer-motion';
-import { useState, useEffect } from 'react';
-
-
+import "./Nav-Bar.css";
+import logo from "./../logo/pg_logo_manette.png";
+import hamburger from "./../logo/menu (3).png";
+import { motion, useAnimation } from "framer-motion";
+import { useState, useEffect } from "react";
 
 function NavBar() {
-    const [open, setOpen] = useState(false);
-    const navbarBgControls = useAnimation();
-    const variants = {
-        open: {
-            clipPath: " circle(1400px at 50px 50px)",
-            transition: {
-                type: "spring",
-                stiffness: 100,
-                damping: 40,
-            }
-        },
-        closed: {
-            clipPath: " circle(0 at 50px 50px)",
-            transition: {
-                delay: 0.5,
-                type: "spring",
-                stiffness: 400,
-                damping: 40,
-            }
-        }
-    }
-    const linksItem = ["Homepage", "Valeur", "Projet", "Commandite", "Contact", "GameJams"]
-    
-    useEffect(() => {
-        // Trigger the initial animation based on the initial state
-        navbarBgControls.start(open ? "open" : "closed");
-      }, [open, navbarBgControls]); 
+  const [open, setOpen] = useState(false);
+  const navbarBgControls = useAnimation();
+  const variants = {
+    open: {
+      clipPath: " circle(1400px at 50px 50px)",
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 40,
+      },
+    },
+    closed: {
+      clipPath: " circle(0 at 50px 50px)",
+      transition: {
+        delay: 0.5,
+        type: "spring",
+        stiffness: 400,
+        damping: 40,
+      },
+    },
+  };
+  const linksItem = [
+    "Homepage",
+    "Valeur",
+    "Projet",
+    "Commandite",
+    "Contact",
+    "GameJams",
+  ];
 
-    const handleToggle = async () => {
-        setOpen((prev) => !prev);
-        await navbarBgControls.start("closed");
-        // Toggle the animation of navbar-bg
-       await navbarBgControls.start(open ? "closed" : "open");
-      };
-    const [scrolling, setScrolling] = useState(false);
-    const [scrollTop, setScrollTop] = useState(0);
-    const controls = useAnimation();
+  useEffect(() => {
+    // Trigger the initial animation based on the initial state
+    navbarBgControls.start(open ? "open" : "closed");
+  }, [open, navbarBgControls]);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrollTop(window.scrollY);
-            setScrolling(window.scrollY > scrollTop);
-    
-            // If the sidebar is open, don't apply scrolling animations
-            // If the sidebar is open or if it's in mobile view, don't apply scrolling animations
-            if (open || window.innerWidth <= 768) {
-                return;
-            }
-            if (open) {
-                return;
-            }
-    
-            // If scrolling down, slide the navbar up
-            if (window.scrollY > scrollTop) {
-                controls.start({ y: '-100%', transition: { duration: 0.3 } });
-            } else {
-                // If scrolling up, slide the navbar back down
-                controls.start({ y: '0%', transition: { duration: 0.3 } });
-            }
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [scrollTop, controls, open]);
+  const handleToggle = async () => {
+    setOpen((prev) => !prev);
+    await navbarBgControls.start("closed");
+    // Toggle the animation of navbar-bg
+    await navbarBgControls.start(open ? "closed" : "open");
+  };
+  const [scrolling, setScrolling] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollTop(window.scrollY);
+      setScrolling(window.scrollY > scrollTop);
+
+      // If the sidebar is open, don't apply scrolling animations
+      // If the sidebar is open or if it's in mobile view, don't apply scrolling animations
+      if (open || window.innerWidth <= 768) {
+        return;
+      }
+      if (open) {
+        return;
+      }
+
+      // If scrolling down, slide the navbar up
+      if (window.scrollY > scrollTop) {
+        controls.start({ y: "-100%", transition: { duration: 0.3 } });
+      } else {
+        // If scrolling up, slide the navbar back down
+        controls.start({ y: "0%", transition: { duration: 0.3 } });
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollTop, controls, open]);
 
     const isMobile = window.innerWidth <= 767;
     return (
@@ -125,6 +130,5 @@ function NavBar() {
             </motion.div>
     );
 }
-
 
 export default NavBar;
