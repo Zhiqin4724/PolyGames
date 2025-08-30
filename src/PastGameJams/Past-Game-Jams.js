@@ -2,7 +2,7 @@ import './Past-Game-Jams.css';
 import { motion } from 'framer-motion';
 import gameJam from'./../logo/game_jam.jpg'; 
 import gameJam25 from'./../logo/CreativeJam_Affiche_25e.png'; 
-import gris from'./../logo/gris.png'; 
+import grisJam25_1 from'./../logo/CreativeJam_-_QR.webp'; 
 
 
 const gameJamData = [
@@ -20,8 +20,8 @@ const gameJamData = [
     },
     {
         id: 3,
-        image: gris,
-        title: 'Édition À venir',
+        image: grisJam25_1,
+        title: 'Édition Septembre 2025',
         theme: 'Thème: À venir',
       },
   ];

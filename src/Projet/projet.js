@@ -3,7 +3,7 @@ import gamejam from './../logo/gamejam_square.png'
 import cube from './../logo/CUBE_logoDiscord.png'
 import atelier from './../logo/unity.png'
 import gamedev from './../logo/codeimage.png'
-import concours from './../logo/2023_CUBI_Banner-1.jpg'
+import concours from './../logo/2023_CUBI_Banner.jpg'
 import lavalVirtual from './../logo/LV-CAMPUS-2.png'
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';

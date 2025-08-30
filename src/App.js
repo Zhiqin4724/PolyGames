@@ -23,7 +23,7 @@ function App() {
   
     <section id="APropros"><Apropos ></Apropos></section>
     <section id="Valeur"><Valeur></Valeur></section>
-    {/* <section id="GameJams"><GameJams></GameJams></section> */}
+    <section id="GameJams"><GameJams></GameJams></section>
     <section id="Equipe"><Equipe ></Equipe></section>
     
     {/* <section id="portfolio"><Portfolio></Portfolio></section> */}
