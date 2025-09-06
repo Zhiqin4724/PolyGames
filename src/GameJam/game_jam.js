@@ -224,13 +224,13 @@ function GameJams() {
           </div>
           <div className="game__jam-right-button-container">
             <a
-              href="https://www.example.com/tickets"
+              href="https://www.zeffy.com/en-CA/ticketing/creative-jam-25e-edition"
               className="game__jam-right-button-buy-ticket"
             >
               acheter billets
             </a>
             <a
-              href="https://www.example.com/teams"
+              href="https://docs.google.com/spreadsheets/d/1SAXYwmGu45oCtutPgVdx-GY3UFUOfsV4IkylpKLipO0/edit?gid=670964336#gid=670964336"
               className="game__jam-right-button-join-team"
             >
               Liste d'equipe
