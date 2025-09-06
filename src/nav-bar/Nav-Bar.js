@@ -82,52 +82,63 @@ function NavBar() {
 
     const isMobile = window.innerWidth <= 767;
     return (
-            <motion.div  className={`container-navbar ${scrolling ? 'hidden' : ''}`}
-            initial={{ y: 0 }}
-            animate={controls}>
-                <div className="nav-container">
-                    <div className="navbar-logo-container">
-                        <motion.div className='sidebar' animate={open ? "open" : "closed"}>
-                            <motion.div className='navbar-bg' variants={variants} initial={false} animate={navbarBgControls}>
-                                <div className='navbar-links' onClick={handleToggle}>
-                                    {linksItem.map((item) => (
-                                        <a href={`#${item}`} key={item}>
-                                        {item}
-                                        </a>
-                                    ))}
-                                </div>
-                            </motion.div>
-                            <button className='hamburger-button' onClick={handleToggle}>
-                                <img src={hamburger} alt="hamburger-menu" className='hamburger-menu-logo'></img>    
-                            </button>
-                        </motion.div>
-                        <img src={logo} alt="logo-poly" className='navbar-polygames-logo'></img>
-                    </div>
-                    {!isMobile && (
-                        <div className='content'>
-                            <div className='info'>
-                                <a href="#Valeur" >Valeur</a>
-                            </div>
-                            {/* <div className='info'>
-                                <a href="#GameJam" >GameJams</a>
-                            </div> */}
-                            <div className='info'>
-                                <a href="#GameJam" >GameJams</a>
-                            </div>
-                            <div className='info'>
-                                <a href="#Projet" >Projet</a>
-                            </div>
-                            <div className='info'>
-                                <a href="#Commentaire" >Commentaire</a>
-                            </div>
-                            <div className='info'>
-                                <a href="#Contact" >Contact</a>
-                            </div>
-
-                        </div>
-                    )}
+      <motion.div
+        className={`container-navbar ${scrolling ? "hidden" : ""}`}
+        initial={{ y: 0 }}
+        animate={controls}
+      >
+        <div className="nav-container">
+          <div className="navbar-logo-container">
+            <motion.div className="sidebar" animate={open ? "open" : "closed"}>
+              <motion.div
+                className="navbar-bg"
+                variants={variants}
+                initial={false}
+                animate={navbarBgControls}
+              >
+                <div className="navbar-links" onClick={handleToggle}>
+                  {linksItem.map((item) => (
+                    <a href={`#${item}`} key={item}>
+                      {item}
+                    </a>
+                  ))}
                 </div>
+              </motion.div>
+              <button className="hamburger-button" onClick={handleToggle}>
+                <img
+                  src={hamburger}
+                  alt="hamburger-menu"
+                  className="hamburger-menu-logo"
+                ></img>
+              </button>
             </motion.div>
+            <img
+              src={logo}
+              alt="logo-poly"
+              className="navbar-polygames-logo"
+            ></img>
+          </div>
+          {!isMobile && (
+            <div className="content">
+              <div className="info">
+                <a href="#Valeur">Valeur</a>
+              </div>
+              <div className="info">
+                <a href="#GameJams">GameJams</a>
+              </div>
+              <div className="info">
+                <a href="#Projet">Projet</a>
+              </div>
+              <div className="info">
+                <a href="#Commentaire">Commentaire</a>
+              </div>
+              <div className="info">
+                <a href="#Contact">Contact</a>
+              </div>
+            </div>
+          )}
+        </div>
+      </motion.div>
     );
 }
 

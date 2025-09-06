@@ -11,7 +11,7 @@ import PastGameJams from './PastGameJams/Past-Game-Jams.js';
 import GameJams from './GameJam/game_jam.js';
 // import { Application } from '@splinetool/runtime';
 
-
+// #ffb165 orange
 
 function App() {
   return (

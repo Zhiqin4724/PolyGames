@@ -2,8 +2,32 @@ import "./game_jam.css";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import gameJam from "./../logo/CreativeJam_-_QR.webp";
+import logo from "./../logo/Logo2.png";
 import gris from "./../logo/gris.png";
+import location from "./../logo/location.png";
+import calendar from "./../logo/calendar.png";
 
+// Le composant QACard pour une seule carte de Q&A
+const QACard = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div
+      className={`qa-card ${isOpen ? "open" : ""}`}
+      onClick={() => setIsOpen(!isOpen)}
+    >
+      <div className="qa-question">
+        <span className="qa-icon">{isOpen ? "−" : "+"}</span>
+        {question}
+      </div>
+      <div className="qa-answer">
+        <p>{answer}</p>
+      </div>
+    </div>
+  );
+};
+
+// --- Votre composant Countdown et le reste du code GameJams ---
 const variants = {
   initial: {
     y: 300,
@@ -97,9 +121,45 @@ const Countdown = () => {
   );
 };
 
+// --- Rendu du composant GameJams ---
 function GameJams() {
+  // Vos 5 questions-réponses
+  const faqData = [
+    {
+      question: "Est-ce que les personnes sans expérience peuvent participer ?",
+      answer:
+        "Oui ! Participer au Creative Jam est le meilleur moyen d’apprendre à développer un jeu !",
+    },
+    {
+      question: "Quelle est la taille minimale et maximale des équipes ?",
+      answer:
+        "Les équipes doivent être composées de 6 à 8 membres. Un 9ème membre peut être ajouté, mais il doit être un sound designer.",
+    },
+    {
+      question:
+        "Je veux participer mais je suis seul, est-ce que je peux m’inscrire ?",
+      answer:
+        "C’est tout à fait correct ! Inscris-toi seul ou en équipe. Nous veillerons à jumeler les participants qui sont seuls pour qu’ils puissent rejoindre des équipes.",
+    },
+    {
+      question:
+        "Est-ce qu’il y a des restrictions particulières pour le choix de l’engin de jeu ?",
+      answer:
+        "Vous êtes libres d’utiliser les outils que vous voulez. Les ordinateurs qui vous seront fournis auront Unity et Unreal Engine d'installé dessus, mais vous pouvez aussi utiliser votre propre ordinateur.",
+    },
+    {
+      question:
+        "46h c’est long, est-ce que je dois rester sur place tout le long ?",
+      answer:
+        "Non, il n’y a pas d'obligation de rester, mais c’est recommandé. Un espace sera dédié pour installer des sacs de couchage.",
+    },
+  ];
+
   return (
     <div className="container-game_jam">
+      {/* <div className="game_jam-background">
+        <img src={logo} alt="Background Logo" />
+      </div> */}
       <div className="container-game__jam-image">
         <div className="game__jam-overflow">
           <img src={gameJam} alt="Gris" className="game_jam-gris"></img>
@@ -109,17 +169,53 @@ function GameJams() {
       <div className="game__jam-information-container">
         <div className="game__jam-information-list">
           <div className="game__jam-information-titre">
-            Creative Jam 46eme edition
+            Créative Jam 46ème édition
           </div>
           <div className="game__jam-information-date">
             <div className="game__jam-information-date-title">Date</div>
+
             <div className="game__jam-information-date-time">
+              <img src={calendar} alt="Calendar icon" className="info-icon" />
               19 au 21 Septembre
             </div>
           </div>
-          <div className="game__jam-information-lieu">Endroit</div>
-          <div className="game__jam-information-apropros">A propros</div>
-          <div className="game__jam-information-QA">QA</div>
+          <div className="game__jam-information-lieu-container">
+            <div className="game__jam-lieu-title">Endroit</div>
+            <div className="game__jam-lieu-address">
+              <img src={location} alt="Location icon" className="info-icon" />
+              1501 Rue de Bleury 7e étage, Montréal, QC H3A 0H3
+            </div>
+          </div>
+          <div className="game__jam-information-apropos-container">
+            <div className="game__jam-apropos-title">À propos</div>
+            <div className="game__jam-apropos-description">
+              <p>
+                Le Creative Jam est un événement de 46 heures dédié à la
+                création de jeux vidéo. Organisé une ou deux fois par an en
+                collaboration avec Poly Games, cet événement rassemble les
+                étudiants pour concevoir et développer un jeu sur un thème qui
+                change à chaque édition.
+              </p>
+              <p>
+                C'est une occasion unique d'apprendre en équipe, de rencontrer
+                d'autres passionnés et de mettre ses compétences à l'épreuve. À
+                la fin de l'événement, les jeux sont évalués par un jury composé
+                d'employés de compagnies de jeux vidéo, ce qui offre une
+                excellente visibilité et des retours précieux pour les
+                participants.
+              </p>
+            </div>
+          </div>
+          <div className="game__jam-information-QA">
+            <h2 className="qa-title">Questions fréquentes</h2>
+            {faqData.map((item, index) => (
+              <QACard
+                key={index}
+                question={item.question}
+                answer={item.answer}
+              />
+            ))}
+          </div>
         </div>
         <div className="game__jam-right-container">
           <div className="game__jam-right-Timer">
@@ -142,9 +238,6 @@ function GameJams() {
           </div>
         </div>
       </div>
-      {/* <a href='https://www.zeffy.com/en-CA/ticketing/creative-jam-25e-edition'>
-      <button className='Game_jam_join_button' >S'inscrire</button>
-      </a> */}
     </div>
   );
 }

@@ -48,29 +48,44 @@ const textslide2 = {
 function Apropos() {
 
   return (
-      
-      <div className="container-a-propos">
-        <motion.div id="left-title" variants={textvariants} initial="initial" animate="animate">
+    <div className="container-a-propos">
+      <motion.div
+        id="left-title"
+        variants={textvariants}
+        initial="initial"
+        animate="animate"
+      >
         <motion.div id="title-a-propros" variants={textvariants}>
-        Bienvenue sur Poly Games
+          Bienvenue sur Poly Games
         </motion.div>
         <motion.div id="sub-title" variants={textvariants}>
-        Libérez votre développeur de jeux intérieur, apprenez, créez, partagez!
+          Libérez votre développeur de jeux intérieur, apprenez, créez,
+          partagez!
         </motion.div>
-        </motion.div>
-        {<TV></TV>}
-        <motion.div className='apropros-bg-text' variants={textslide} initial="initial" animate="animate">
-          Game Club Creation
-        </motion.div>
-        <motion.div className='apropros-bg-text' variants={textslide2} initial="initial" animate="animate">
-          Game Club Creation
-        </motion.div>
-        {/* <a href="#GameJams" >
-          <button className='button-game_jam'>Game Jams</button>
-        </a> */}
-        <div className='apropros-HideCanvas'></div>
-      </div>
-    );
+      </motion.div>
+      {<TV></TV>}
+      <motion.div
+        className="apropros-bg-text"
+        variants={textslide}
+        initial="initial"
+        animate="animate"
+      >
+        Game Club Creation
+      </motion.div>
+      <motion.div
+        className="apropros-bg-text"
+        variants={textslide2}
+        initial="initial"
+        animate="animate"
+      >
+        Game Club Creation
+      </motion.div>
+      <a href="#GameJams">
+        <button className="button-game_jam">Game Jams</button>
+      </a>
+      <div className="apropros-HideCanvas"></div>
+    </div>
+  );
   }
 
   export default Apropos;
