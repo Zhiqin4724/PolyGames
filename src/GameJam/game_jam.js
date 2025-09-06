@@ -169,7 +169,7 @@ function GameJams() {
       <div className="game__jam-information-container">
         <div className="game__jam-information-list">
           <div className="game__jam-information-titre">
-            Créative Jam 46ème édition
+            Créative Jam 26ème édition
           </div>
           <div className="game__jam-information-date">
             <div className="game__jam-information-date-title">Date</div>
@@ -183,7 +183,7 @@ function GameJams() {
             <div className="game__jam-lieu-title">Endroit</div>
             <div className="game__jam-lieu-address">
               <img src={location} alt="Location icon" className="info-icon" />
-              1501 Rue de Bleury 7e étage, Montréal, QC H3A 0H3
+              1501 Rue de Bleury, Montréal, QC H3A 0H3
             </div>
           </div>
           <div className="game__jam-information-apropos-container">
@@ -192,7 +192,7 @@ function GameJams() {
               <p>
                 Le Creative Jam est un événement de 46 heures dédié à la
                 création de jeux vidéo. Organisé une ou deux fois par an en
-                collaboration avec Poly Games, cet événement rassemble les
+                collaboration avec le NAD UQAC, cet événement rassemble les
                 étudiants pour concevoir et développer un jeu sur un thème qui
                 change à chaque édition.
               </p>
